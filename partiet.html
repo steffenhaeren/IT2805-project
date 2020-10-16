@@ -1,110 +1,129 @@
 <!DOCTYPE html>
 <html>
     <head>
-<<<<<<< HEAD
-        
-    </head>
-
-</html>
-=======
         <meta charset = "UTF-8">
         <title>MånePartiet</title>
-        <link rel = "stylesheet"
+       <!-- <link rel = "stylesheet"
         type = "text/css"
-        href = "style.css"/>
+        href = "css/style.css"/>-->
+        <style>
+            .column16 {
+                float: left;
+                width: 16.4%;
+                border: 1px double black
+            }
+
+            .column20 {
+                float: left;
+                width: 20%;
+            }
+
+            .column25 {
+                float: left;
+                width: 25%;
+            }
+
+            .column27 {
+                float: left;
+                width: 27%;
+            }
+
+            .column33 {
+                float: left;
+                width: 33%;
+            }
+
+            .column50 {
+                float: left;
+                width: 50%;
+            }
+
+            .column65 {
+                float: left;
+                width: 65%;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            
+           
+
+            .avsnitt {
+                width: 50%;
+                margin: auto;
+                border: 3px double white;
+                padding: 10px;
+                text-align: justify;
+                margin-bottom: 20px;
+            }
+
+            .header {
+                width: 50%;
+                margin: auto;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+        
+            .gif_og_tekst{
+                width:50%;
+                margin:auto;
+                border: 3px double white;
+            }
+
+            #gif{
+                width: 100%;
+            }
+
+            .bilde{
+                width: 100%;
+            }
+
+            .undertekst{
+                width: 75%;
+                text-align: center;
+            }
+            
+        </style>
     </head>
     <body>
+        <div id="navbar"></div>
 
-        <img src="moon.png" alt="Månen" width="900" height="900">
-
-        <div id="titel">
-            <h1>MånePartiet</h1>
-            <p>Norge til månen, månen til folket!</p>
+        <div class="gif_og_tekst">
+            <img id="gif" src="bilder/maanesengif.gif">
         </div>
 
-        <div class="avsnitt">
-            <h1>Vår klient</h1>
-
-            <li>Klientens navn: Månepartiet</li>
-            <li>Kontaktperson: Henrik Medmåne Månesen </li>
-
-            <p>Vår klient, Månepartiet, er et nyoppstartet politisk parti med fokus på teknologisk utvikling, fremskritt, bærekraftig romkraft, og utdanning.</p>
+    <div class="gif_og_tekst">
+        <div class="row">
+            <div class="column16"><img class="bilde" src="bilder/test.jpeg"><p class="undertekst">LOREMLROEMLREOMERERER</p></div>
+            <div class="column16"><img class="bilde" src="bilder/test.jpeg"><p class="undertekst">LOREMLROEMLREOMERERER</p></div>
+            <div class="column16"><img class="bilde" src="bilder/test.jpeg"><p class="undertekst">LOREMLROEMLREOMERERER</p></div>
+            <div class="column16"><img class="bilde" src="bilder/test.jpeg"><p class="undertekst">LOREMLROEMLREOMERERER</p></div>
+            <div class="column16"><img class="bilde" src="bilder/test.jpeg"><p class="undertekst">LOREMLROEMLREOMERERER</p></div>
+            <div class="column16"><img class="bilde" src="bilder/test.jpeg"><p class="undertekst">LOREMLROEMLREOMERERER</p></div>
         </div>
+    </div>
 
-        <div class="avsnitt">
-            <h1>Formål og mål</h1>
-            <p>Månepartiet har så langt bare eksistert i et mørkt hjørne i Gerhards hode, men nå ønsker medlemmene å gå nasjonalt. Ved å ha en nettside kan Månepartiet nå ut til flere personer og ekspandere sitt herredømme.</p>
-        </div>
-
-        <div class="avsnitt">
-            <h1>Målgruppe</h1>
-            <p>Nettsidens målgruppe vil hovedsakelig være politisk aktive nordmenn med interesse for romfart. Målgruppen vil også inkludere alle nordmenn med interesse i politikk som ønsker å utforske norske partier. Nettsiden kan også nå ut til mennesker kun med interesse for teknologi og romfart.</p>
-        </div>
-
-        <div class="avsnitt">
-            <h1>Websidens innhold</h1>
-
-            <p>Politikk:</p>
-            <li>Våre hovedsaker</li>
-            <li>Romfart på 1,2,3 (/ romfart for dummies / romfart crashcourse)</li>
-            <li>Politikken vår fra A til Å</li>
-            <li>Partiprogram</li>
-            <li>Statsbudsjettet</li>
-
-            <p>Partiet:</p>
-            <li>Om månepartiet</li>
-            <li>Månepartiets historie</li>
-            <li>Nyheter</li>
-            <li>Våre politikere</li>
-            <li>Etiske og organitoriske retningslinjer</li>
-            <li>Ungdomsparti (?)</li>
-            <li>Lokallag og fylkeslag</li>
-            <li>Bli kjent med Henrik (Gif av Henrik Medmåne Månesen)</li>
-
-            <p>Bli medlem:</p>
-            <li>Skrive inn detajler</li>
-            <li>Få tilbakemelding om at man har blitt medlem</li>
-            
-            <p>Kontakt oss:</p>
-            <li>Mulighet for å sende mail til partiet</li>
-            <li>Skrive inn navn, adresse og melding</li>
-            <li>Få tilbakemelding om at melding er sendt/åpne epost</li>
-
-            <p>Støtt oss:</p>
-            <li>Gi gave/doner penger</li>
-            <li>Kjøp merch (t-skjorte, kopp, rakett)</li>
-        </div>
-
-        <div class="avsnitt">
-            <h1>Funksjonelle og ikke-funksjonelle krav</h1>
-
-            <p>Funksjonelle krav:</p>
-            <li>Du kommer til hovedsiden når du trykker på logoen</li>
-            <li>Alle sidene kan nås</li>
-            <li>Når du trykker på “Bli medlem” så kan du skrive inn detaljer </li>
-            <li>(“The website shall accept customer orders”)</li>
-
-            <p>Ikke-funksjonelle krav:</p>
-            <li>Alle sidene lastes inn etter mindre enn ett sekund</li>
-            <li>Alle sidene kan nås fra hver side (god navigasjonsbar)</li>
-            <li>Siden er pen og oversiktlig</li>
-
-        </div>
-
-        <div class="avsnitt">
-            <h1>Spesifikke preferanser</h1>
-            <p>Blå, oransje, grå, hvite farger. Hvis mulig kul logo som beveger seg (rakett som tar av)</p>
-        </div>
-
-        <div class="avsnitt">
-            <h1>Netsidens endelige plassering</h1>
-            <p>Gerhard sitt domene</p>
-        </div>
-
-        <div id="footer">
-            <p>av Alexandra, Brage, Gerhard, Mathias, Steffen</p>
-        </div>
+        <h2 class="header">Historien vår</h2>
+        <p class="avsnitt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+        <h2 class="header">Ungdomsparti</h2>
+        <p class="avsnitt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+        <h2 class="header">Lokallag</h2>
+        <p class="avsnitt">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+        <h2 class="header">Fylkeslag</h2>
+        <p class="avsnitt">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+        <h2 class="header">Etiske og organitoriske retningslinjer</h2>
+        <p class="avsnitt">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+        <div id="footer"></div>
 
     </body>
 </html>
->>>>>>> 629944bb86d9d49e1c72f473939eae66ca66cae1
