@@ -9,48 +9,14 @@
         <style>
             .column16 {
                 float: left;
-                width: 16.4%;
-                border: 1px double black
-            }
-
-            .column20 {
-                float: left;
-                width: 20%;
-            }
-
-            .column25 {
-                float: left;
-                width: 25%;
-            }
-
-            .column27 {
-                float: left;
-                width: 27%;
-            }
-
-            .column33 {
-                float: left;
-                width: 33%;
-            }
-
-            .column50 {
-                float: left;
-                width: 50%;
-            }
-
-            .column65 {
-                float: left;
-                width: 65%;
+                width: 16.666%;
             }
 
             .row:after {
                 content: "";
                 display: table;
                 clear: both;
-            }
-
-            
-           
+            }           
 
             .avsnitt {
                 width: 50%;
@@ -59,6 +25,16 @@
                 padding: 10px;
                 text-align: justify;
                 margin-bottom: 20px;
+            }
+
+            .avsnitt1 {
+                width: 50%;
+                margin: auto;
+                border: 3px double white;
+                padding: 10px;
+                
+                margin-bottom: 20px;
+                position: relative
             }
 
             .header {
@@ -80,12 +56,31 @@
             }
 
             .bilde{
-                width: 100%;
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 5%;
             }
 
-            .undertekst{
-                width: 75%;
+            .innhold{
+                position: relative;
                 text-align: center;
+                color: white;
+            }
+
+            #tekst_paa_gif{
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                color:#000;
+                font-size: 3em;
+            }
+
+            .bildetekst{
+                width: 75%;
+                margin: auto;
+                padding: 10px;
+                text-align: center;
+                margin-bottom: 20px;
             }
             
         </style>
@@ -94,19 +89,21 @@
         <div id="navbar"></div>
 
         <div class="gif_og_tekst">
-            <img id="gif" src="bilder/maanesengif.gif">
-        </div>
+            <div class="innhold">
+                <img id="gif" src="bilder/maanesengif.gif">
+                <p id="tekst_paa_gif">Bli kjent med Henrik!</p>
+            </div>
+                
 
-    <div class="gif_og_tekst">
-        <div class="row">
-            <div class="column16"><img class="bilde" src="bilder/test.jpeg"><p class="undertekst">LOREMLROEMLREOMERERER</p></div>
-            <div class="column16"><img class="bilde" src="bilder/test.jpeg"><p class="undertekst">LOREMLROEMLREOMERERER</p></div>
-            <div class="column16"><img class="bilde" src="bilder/test.jpeg"><p class="undertekst">LOREMLROEMLREOMERERER</p></div>
-            <div class="column16"><img class="bilde" src="bilder/test.jpeg"><p class="undertekst">LOREMLROEMLREOMERERER</p></div>
-            <div class="column16"><img class="bilde" src="bilder/test.jpeg"><p class="undertekst">LOREMLROEMLREOMERERER</p></div>
-            <div class="column16"><img class="bilde" src="bilder/test.jpeg"><p class="undertekst">LOREMLROEMLREOMERERER</p></div>
-        </div>
-    </div>
+            <div class="row">
+                <div class="column16"><img class="bilde" src="bilder/test.jpeg"><p class="avsnitt1">Dette er en perosn i partiet, og bla og bla bllaa.</p></div>
+                <div class="column16"><img class="bilde" src="bilder/test.jpeg"><p class="avsnitt1">Dette er en perosn i partiet, og bla og bla bllaa.</p></div>
+                <div class="column16"><img class="bilde" src="bilder/test.jpeg"><p class="avsnitt1">Dette er en perosn i partiet, og bla og bla bllaa.</p></div>
+                <div class="column16"><img class="bilde" src="bilder/test.jpeg"><p class="avsnitt1">Dette er en perosn i partiet, og bla og bla bllaa.</p></div>
+                <div class="column16"><img class="bilde" src="bilder/test.jpeg"><p class="avsnitt1">Dette er en perosn i partiet, og bla og bla bllaa.</p></div>
+                <div class="column16"><img class="bilde" src="bilder/test.jpeg"><p class="avsnitt1">Dette er en perosn i partiet, og bla og bla bllaa.</p></div>
+            </div>
+     </div>
 
         <h2 class="header">Historien vår</h2>
         <p class="avsnitt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -115,13 +112,13 @@
         <p class="avsnitt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         
         <h2 class="header">Lokallag</h2>
-        <p class="avsnitt">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="avsnitt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         
         <h2 class="header">Fylkeslag</h2>
-        <p class="avsnitt">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="avsnitt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         
         <h2 class="header">Etiske og organitoriske retningslinjer</h2>
-        <p class="avsnitt">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="avsnitt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         
         <div id="footer"></div>
 
