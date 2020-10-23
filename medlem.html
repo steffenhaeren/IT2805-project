@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>medlem</title>
+        <link rel = "stylesheet"
+        type = "text/css"
+        href = "style.css"/>
+    </head>
+    <body>
+        <form action="http://folk.ntnu.no/michaedm/norwegian-tax-administration/receive.php" method="post"></form>
+            <h1>Bli medlem!</h1>
+            <table>
+                <h2>Felter markert med * er obligatoriske.</h2>
+                <tr>
+                    <td class="leftcolumn"><label for="fulltnavn">Fullt navn:</label></td>
+                    <td>
+                        <input type="text" placeholder="Fullt navn" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"><label for="adresse">Adresse:</label></td>
+                    <td>
+                        <input type="text" placeholder="Adresse" required>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="leftcolumn"><label for="DOB">Fødselsdato:</label></td>
+                    <td>
+                        <input type="date" name="birthdate" max="2020-12-31" min="1904-02-11" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"><label for="email">E-mail:</label></td>
+                    <td>
+                        <input type="email" placeholder="E-mail" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"><label for="gender">Kjønn:</label></td>
+                    <td>
+                        <select required>
+                            <option value="">--------</option>
+                            <option value="Mann">Mann</option>
+                            <option value="Kvinne">Kvinne</option>
+                            <option value="Andre">Andre</option>
+                            <option value="Ikke">Ønsker ikke oppgi</option>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="leftcolumn"><label for="medlemskap">Type medlemskap:</label></td>
+                    <td>
+                        <select required>
+                            <option value="ordinær">Ordinær kontigent (2020) (500,-)</option>
+                            <option value="redusert">Redusert kontigent (2020) (150,-)</option>
+                            <option value="høy">Høy kontigent (2020) (1000,-)</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="leftcolumn"><label for="velkomstpakke">Ønsker velkomstpakke tilsendt i posten:</label></td>
+                    <td>
+                        <select required>
+                            <option value="ja">Ja</option>
+                            <option value="nei">Nei</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="leftcolumn"><label for="avtale">Jeg har lest og godtar avtalen for medlemskap (se under):</label></td>
+                    <td>
+                        <input type="checkbox" name="avtale" value="True">Ja
+                    </td>
+                </tr>
+
+
+            </table>
+        </form>
+
+        <!--
+        <script type="text/javascript">
+            const tax = () => {
+              console.log(":)");
+              document.getElementById("tax").value =
+                0.35 * document.getElementById("income").value +
+                0.25 * document.getElementById("wealth").value;
+            };
+            document.getElementById("income").addEventListener("change", tax);
+            document.getElementById("wealth").addEventListener("change", tax);
+        </script> -->
+
+    </body>
+</html>
+    
