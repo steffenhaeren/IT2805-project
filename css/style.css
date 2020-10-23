@@ -1,5 +1,5 @@
 body {
-    background-color:rgb(200, 200, 200);
+    background-color:rgb(150, 150, 150);
     color: white;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -79,6 +79,14 @@ main{
     margin-left: 5%;
     margin-right: 5%;
 }
+
+/* bildebakgrunnn til p3_changes.html*/
+#moon {
+    margin-top: -400px;
+    margin-left: -800px;
+    position: absolute;
+    z-index: -1;
+  }
 
 
 @media (max-width: 940px) {
