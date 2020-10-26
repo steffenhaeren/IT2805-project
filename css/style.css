@@ -8,8 +8,9 @@ body {
 
 /*NAVBAR*/
 #navbar {
+  z-index: 10;
   display: grid;
-  grid-template-columns: 1fr 200px 200px 200px 380px 1fr 200px 1fr;
+  grid-template-columns: 1fr 200px 180px 200px 390px 1fr 260px 1fr;
   height: 140px;
   /* navbarens linje: */
   background-image: linear-gradient(white, white);
@@ -19,24 +20,24 @@ body {
   background-repeat: no-repeat;
 }
 #navbar > a > h1 {
-  /* fancy underline: */
-  transition: background-size 0.5s;
-  background-image: linear-gradient(white, white);
-  background-size: 0px 2px;
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
   /* text formatering: */
   text-decoration: none;
   color: white;
   margin-top: 85px;
   float: right;
 }
-#navbar > a:hover > h1 {
+#navbar > a:not(:last-child) > h1 {
   /* fancy underline: */
   background-image: linear-gradient(white, white);
+  background-repeat: no-repeat;
+  background-size: 0px 2px;
+  background-position: 100% 100%;
+  transition: background-size 0.5s;
+}
+#navbar > a:not(:last-child) > h1:hover {
+  /* fancy underline: */
   background-size: 100% 2px;
   background-position: 0 100%;
-  background-repeat: no-repeat;
   transition: background-size 0.5s;
 }
 #navbar img {
@@ -51,40 +52,67 @@ body {
 }
 #støtt {
   grid-column-start: 7;
+  position: relative;
+}
+#støtt > h1 {
+  background-image: linear-gradient(90deg, white 1%, rgb(40, 40, 40) 1%);
+  background-size: 100% 0;
+  background-repeat: no-repeat;
+
+  padding-left: 8px;
+  position: absolute;
+
+  transition: background-size 0.3s;
+  transition-delay: 0.2s;
+}
+#støtt > h1 > a > h1 {
+  font-size: inherit;
+  color: white;
+  float: left;
+  margin: 0;
+
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+#støtt > h1:hover {
+  background-size: 100% 100%;
+  transition: background-size 0.3s;
+}
+#støtt > h1:hover > a > h1 {
+  opacity: 1;
+  transition: opacity 0.6s linear;
+  transition-delay: 0.1s;
 }
 /* lite vindu versjon: */
-@media (max-width: 1180px) {
+@media (max-width: 1400px) {
   #navbar {
-    grid-template-columns: 1fr 150px 150px 150px 285px 1fr 150px 1fr;
+    grid-template-columns: 1fr 150px 130px 140px 280px 1fr 190px 1fr;
     height: 105px;
     font-size: 0.8pc;
   }
   #navbar > a > h1 {
-    margin-top: 70px;
+    margin-top: 65px;
   }
 }
 /* mobil versjon: */
-@media (max-width: 885px) {
+@media (max-width: 950px) {
   #navbar {
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: 50px 50px 50px 50px;
-    height: 200px;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 30px 30px 30px 30px;
+    font-size: 0.5pc;
+    height: 120px;
 
-    background-size: 75% 1px;
-    background-position-x: 0;
-    background-position-y: 100%;
-    background-repeat: no-repeat;
+    background-size: 0;
   }
   /* text formatering: */
   #navbar > a > h1 {
     margin-top: 15px;
     float: left;
-    margin-left: 15px;
     white-space: nowrap;
   }
   /* grid plassering: */
   #navbar img {
-    margin-top: 50px;
+    margin-top: 45px;
   }
   #logoa {
     grid-column-start: 1;
@@ -97,14 +125,17 @@ body {
   #n2 {
     grid-column-start: 2;
     grid-row-start: 2;
+    margin-left: 20%;
   }
   #n3 {
     grid-column-start: 2;
     grid-row-start: 3;
+    margin-left: 40%;
   }
   #støtt {
     grid-column-start: 2;
     grid-row-start: 4;
+    margin-left: 60%;
   }
 }
 /*NAVBAR SLUTT*/
