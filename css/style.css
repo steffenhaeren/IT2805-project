@@ -57,14 +57,14 @@ body {
 }
 
 main {
-  height: 100%;
+  width: 70%;
   margin: auto;
   margin-bottom: 100px;
 }
 
 section {
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 .column33 {
@@ -85,6 +85,7 @@ section {
   padding: 10px;
   text-align: justify;
   margin-bottom: 20px;
+  font-size: 1.5em;
 }
 
 .header {
@@ -96,6 +97,8 @@ section {
 
 #gif {
   width: 100%;
+  border: 5px double white;
+  border-radius: 5px;
 }
 
 .politiker {
@@ -104,6 +107,13 @@ section {
 
 .bilde {
   width: 100%;
+}
+
+.bildetekst {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
 }
 
 /* bildebakgrunnn til p3_changes.html*/
@@ -116,6 +126,46 @@ section {
 
 @media (max-width: 940px) {
   main {
-    width: 80%;
+    width: 100%;
   }
+}
+
+.slideshow-container {
+  width: 635px;
+  height: 340px;
+  margin: auto;
+  border: 5px double black;
+  overflow: hidden;
+}
+
+.slideshow-slide {
+  display: flex;
+}
+
+#prev {
+  float: left;
+  font-size: 50px;
+  transition: color 0.4s ease;
+  color: #a9a9a9;
+  position: absolute;
+  z-index: 10;
+  margin-left: 10px;
+  margin-top: 150px;
+}
+
+#next {
+  float: right;
+  font-size: 50px;
+  transition: color 0.4s ease;
+  color: #a9a9a9;
+  position: absolute;
+  z-index: 10;
+  margin-left: 600px;
+  margin-top: 150px;
+}
+
+#next:hover,
+#prev:hover {
+  transition: color 0.4s ease;
+  color: white;
 }
