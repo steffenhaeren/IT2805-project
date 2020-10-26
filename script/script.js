@@ -17,26 +17,26 @@ const logo = document.createElement("img");
 logo.src = home + "/bilder/logo.png";
 logo.alt = "logo";
 logo.width = "200";
-logo.height = "100";
+logo.height = "120";
 document.getElementById("logoa").appendChild(logo);
 
 const politikk = document.createElement("a");
 politikk.href = loca + "/politikk.html";
-politikk.innerText = "Politikk";
+politikk.innerHTML = "<h1>Politikk</h1>";
 document.getElementById("navbar").appendChild(politikk);
 
 const partiet = document.createElement("a");
 partiet.href = loca + "/partiet.html";
-partiet.innerText = "Partiet";
+partiet.innerHTML = "<h1>Partiet</h1>";
 document.getElementById("navbar").appendChild(partiet);
 
 const romfart = document.createElement("a");
 romfart.href = loca + "/romfart.html";
-romfart.innerText = "Romfart på 1,2,3";
+romfart.innerHTML = "<h1>Romfart på 1,2,3</h1>";
 document.getElementById("navbar").appendChild(romfart);
 
 const støtt = document.createElement("a");
 støtt.id = "støtt";
 støtt.href = loca + "/gave.html";
-støtt.innerText = "Støtt oss";
+støtt.innerHTML = "<h1>Støtt oss</h1>";
 document.getElementById("navbar").appendChild(støtt);
