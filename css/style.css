@@ -17,6 +17,7 @@ body {
 #støtt {
   grid-column-start: 7;
 }
+
 p {
   text-align: left;
   margin: 15px;
@@ -31,6 +32,7 @@ li {
   text-align: center;
   margin: 60px;
   font-size: 1.5em;
+
 }
 
 #footer {
@@ -41,9 +43,48 @@ li {
   position: absolute;
 }
 
-main {
-  width: 50%;
+.parent {
+  height: 200px;
+  width: 80%;
   margin: auto;
+  display: flex;
+}
+
+.child1 {
+  height: 200px;
+  width: 200px;
+  flex: 1;
+}
+.child2 {
+  height: 200px;
+  width: 200px;
+  flex: 1;
+}
+.child3 {
+  height: 200px;
+  width: 200px;
+  flex: 1;
+}
+.child4 {
+  height: 200px;
+  width: 200px;
+  flex: 1;
+}
+
+.footer_link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer_link:hover {
+  text-decoration: none;
+  color: #00ffff;
+}
+
+main {
+  height: 100%;
+  margin: auto;
+  margin-bottom: 100px;
 }
 
 .column16 {
