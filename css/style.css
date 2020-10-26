@@ -246,3 +246,16 @@ section {
   transition: color 0.4s ease;
   color: white;
 }
+
+#tekst_paa_gif {
+  position: absolute;
+  z-index: 1;
+  color: #121212;
+  font-weight: bold;
+  margin-left: 100px;
+  width: 20%;
+  height: auto;
+  font-size: 1.5vw;
+  margin-top: -20%;
+  margin-left: 45%;
+}
