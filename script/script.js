@@ -16,23 +16,26 @@ document.getElementById("navbar").appendChild(logoa);
 const logo = document.createElement("img");
 logo.src = home + "/bilder/logo.png";
 logo.alt = "logo";
-logo.width = "200";
-logo.height = "120";
+logo.width = "100%";
+logo.height = "100%";
 document.getElementById("logoa").appendChild(logo);
 
 const politikk = document.createElement("a");
 politikk.href = loca + "/politikk.html";
 politikk.innerHTML = "<h1>Politikk</h1>";
+politikk.id = "n1";
 document.getElementById("navbar").appendChild(politikk);
 
 const partiet = document.createElement("a");
 partiet.href = loca + "/partiet.html";
 partiet.innerHTML = "<h1>Partiet</h1>";
+partiet.id = "n2";
 document.getElementById("navbar").appendChild(partiet);
 
 const romfart = document.createElement("a");
 romfart.href = loca + "/romfart.html";
 romfart.innerHTML = "<h1>Romfart på 1,2,3</h1>";
+romfart.id = "n3";
 document.getElementById("navbar").appendChild(romfart);
 
 const støtt = document.createElement("a");
