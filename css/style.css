@@ -1,96 +1,107 @@
 body {
-    background-color:rgb(40, 40, 40);
-    color: rgb(230, 230, 230);
-    font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(40, 40, 40);
+  color: rgb(230, 230, 230);
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+}
+
+#navbar {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 10% 200px 200px 200px 200px 1fr 200px 10%;
+  height: 200px;
+}
+#logoa {
+  grid-column-start: 2;
+}
+#støtt {
+  grid-column-start: 7;
 }
 p {
-    text-align: left;
-    margin: 15px;
+  text-align: left;
+  margin: 15px;
 }
-li{
-    text-align: left;
-    margin-left: 30px;
+li {
+  text-align: left;
+  margin-left: 30px;
 }
 
 #titel {
-    width: 100%;
-    text-align: center;
-    margin: 60px;
-    font-size: 1.5em;
+  width: 100%;
+  text-align: center;
+  margin: 60px;
+  font-size: 1.5em;
 }
-
 
 #footer {
-    background-color:rgb(0, 0, 0);
-    height: 50px;
-    width: 100%;
-    left: 0;
-    position: absolute;
+  background-color: rgb(0, 0, 0);
+  height: 50px;
+  width: 100%;
+  left: 0;
+  position: absolute;
 }
 
-main{
-    width:50%;
-    margin:auto
+main {
+  width: 50%;
+  margin: auto;
 }
 
 .column16 {
-    float: left;
-    width: 16.666%;
+  float: left;
+  width: 16.666%;
 }
 
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
-}           
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .avsnitt {
-    width: 100%;
-    margin: auto;
-    border: 3px double white;
-    padding: 10px;
-    text-align: justify;
-    margin-bottom: 20px;
+  width: 100%;
+  margin: auto;
+  border: 3px double white;
+  padding: 10px;
+  text-align: justify;
+  margin-bottom: 20px;
 }
 
 .avsnitt1 {
-    width: 80%;
-    margin: auto;
-    border: 3px double white;
-    padding: 10px;
-    margin-bottom: 20px;
-    position: relative
+  width: 80%;
+  margin: auto;
+  border: 3px double white;
+  padding: 10px;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .header {
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 20px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-
-#gif{
-    width: 100%;
+#gif {
+  width: 100%;
 }
 
-.bilde{
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+.bilde {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /* bildebakgrunnn til p3_changes.html*/
 #moon {
-    margin-top: -400px;
-    margin-left: -800px;
-    position: absolute;
-    z-index: -1;
-  }
-
+  margin-top: -400px;
+  margin-left: -800px;
+  position: absolute;
+  z-index: -1;
+}
 
 @media (max-width: 940px) {
-    main{
-        width:80%
-    }
-} 
+  main {
+    width: 80%;
+  }
+}
