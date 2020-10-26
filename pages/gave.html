@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gi gave</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    '<script src="https://kit.fontawesome.com/be80afe7db.js" crossorigin="anonymous"></script>
     <style>
       input {
         font-family: arial, sans-serif;
@@ -25,49 +26,71 @@
     <header>
       <div id="navbar"></div>
     </header>
-    <h1>Støtt oss ved å gi gave</h1>
 
-    <form
-      action="http://folk.ntnu.no/michaedm/norwegian-tax-administration/receive.php"
-      method="post"
-    >
-      Navn og etternavn: <br />
-      <input
-        id="navn"
-        type="text"
-        name="navn"
-        pattern="[A-Za-z* ]+[A-Za-z*]"
-        required
-      />
-      <br />
-      Postnummer: <br />
-      <input id="postnummer" type="number" name="postnummer" required /> <br />
-      Adresse: <br />
-      <input id="adresse" type="text" name="adresse" required /> <br />
-      Fax: <br />
-      <input id="fax" type="number" name="fax" required /> <br />
+    <main>
+      <h1>Støtt oss ved å gi gave</h1>
 
-      Legge til merch? Velg så mye du vil! <br />
-      Obs Obs, prisen blir lagt til i donasjonsbeløpet<input
-        id="kopp"
-        type="checkbox"
-        name="kopp"
-      />
-      <br />
-      <input id="caps" type="checkbox" name="caps" /> <br />
-      <input id="t-skjorte" type="checkbox" name="t-skjorte" /> <br />
-      <input id="rakett-lauch" type="checkbox" name="rakett-lauch" /> <br />
+  
+        Navn og etternavn: <br />
+        <input
+          id="navn"
+          type="text"
+          name="navn"
+          pattern="[A-Za-z* ]+[A-Za-z*]"
+          required
+        />
+        <br />
+        Postnummer: <br />
+        <input id="postnummer" type="number" name="postnummer" required /> <br />
+        Adresse: <br />
+        <input id="adresse" type="text" name="adresse" required /> <br />
+        Fax: <br />
+        <input id="fax" type="number" name="fax" required /> <br />
 
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      Donasjon: <br />
-      <input id="donasjon" type="number" name="donasjon" required /> <br />
+        Legge til merch? Velg så mye du vil! <br />
+        Obs Obs, prisen blir lagt til i donasjonsbeløpet<input
+          id="kopp"
+          type="checkbox"
+          name="kopp"
+        />
+        <br />
+        <input id="caps" type="checkbox" name="caps" /> <br />
+        <input id="t-skjorte" type="checkbox" name="t-skjorte" /> <br />
+        <input id="rakett-lauch" type="checkbox" name="rakett-lauch" /> <br />
 
-      <input id="submit" type="submit" value="Doner :D" />
-    </form>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        Donasjon: <br />
+        <input id="donasjon" type="number" name="donasjon" required /> <br />
+
+        <input id="submit" type="submit" value="Doner :D" />
+    </main>
 
     <footer>
-      <div id="footer"></div>
+      <hr>
+      <div class="parent">
+        <div class="child1">
+          <h3>Logo</h3>
+        </div>
+        <div class="child2">
+          <p>Månegata 42, 1337 Månen</p>
+          <p>Kontonummer: 1234 56 78912</p>
+          <p>Vipps: 95148025</p>
+        </div>
+        <div class="child3">
+          <h3>Pressehenvendelser</h3>
+          <p>presse@maanen.no</p>
+          <p>45102693</p>
+        </div>
+        <div class="child4">
+          <h3>Sosiale medier</h3>
+          <p><i class="fab fa-facebook"></i><a class="footer_link" href="#">Facebook</a></p>
+          <p><i class="fab fa-instagram"></i><a class="footer_link" href="#">Instagram</a></p>
+          <p><i class="fab fa-twitter"></i><a class="footer_link" href="#">Twitter</a></p>
+          <p><i class="fab fa-youtube"></i><a class="footer_link" href="#">Youtube</a></p>
+        </div>
+      </div>
     </footer>
+
     <script type="text/javascript" src="../script/script.js"></script>
   </body>
 </html>
