@@ -1,3 +1,4 @@
+//NAVBAR:
 const path = window.location.pathname;
 const page = path.split("/").pop();
 console.log(`navbar lastet inn på side ${page}.`);
@@ -52,3 +53,36 @@ gave.id = "gave";
 gave.href = loca + "/gave.html";
 gave.innerHTML = "<br><h1>Gi gave</h1>";
 document.getElementById("far").appendChild(gave);
+
+//FOOTER:
+const logof = document.createElement("img");
+logof.id = "logof";
+logof.src = home + "/bilder/logo.png";
+document.getElementById("footer").appendChild(logof);
+const t1 = document.createElement("div");
+t1.id = "t1";
+t1.innerHTML =
+  "<h3>Info:</h3><p>Månegata 42, 1337 Månen</p><p>Kontonummer: 1234 56 78912</p><p>Vipps: 95148025</p>";
+document.getElementById("footer").appendChild(t1);
+const t2 = document.createElement("div");
+t2.id = "t2";
+t2.innerHTML =
+  "<h3>Pressehenvendelser:</h3><p>presse@maanen.no</p><p>45102693</p>";
+document.getElementById("footer").appendChild(t2);
+
+const t3 = document.createElement("div");
+t3.id = "t3";
+t3.innerHTML = "<h3>Sosiale medier:</h3>";
+document.getElementById("footer").appendChild(t3);
+const ut1 = document.createElement("p");
+ut1.innerHTML = "<i class='fab fa-facebook'></i> <a href='#'>Facebook</a>";
+document.getElementById("t3").appendChild(ut1);
+const ut2 = document.createElement("p");
+ut2.innerHTML = "<i class='fab fa-instagram'></i> <a href='#'>Instagram</a>";
+document.getElementById("t3").appendChild(ut2);
+const ut3 = document.createElement("p");
+ut3.innerHTML = "<i class='fab fa-twitter'></i> <a href='#'>Twitter</a>";
+document.getElementById("t3").appendChild(ut3);
+const ut4 = document.createElement("p");
+ut4.innerHTML = "<i class='fab fa-youtube'></i> <a href='#'>Youtube</a>";
+document.getElementById("t3").appendChild(ut4);
