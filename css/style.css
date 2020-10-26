@@ -2,6 +2,20 @@ body {
   background-color: rgb(40, 40, 40);
   color: rgb(230, 230, 230);
   font-family: "Courier New", Courier, monospace;
+  margin: 0;
+}
+
+#navbar {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 10% 200px 200px 200px 200px 1fr 200px 10%;
+  height: 200px;
+}
+#logoa {
+  grid-column-start: 2;
+}
+#støtt {
+  grid-column-start: 7;
 }
 
 .parent {
@@ -43,7 +57,6 @@ body {
 }
 
 main {
-  width: 50%;
   height: 100%;
   margin: auto;
   margin-bottom: 100px;
