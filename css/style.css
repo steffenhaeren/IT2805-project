@@ -8,6 +8,8 @@ body {
 
 /*NAVBAR*/
 #navbar {
+  z-index: 20;
+  position: relative;
   /*grid templete setup:*/
   display: grid;
   grid-template-columns: 1fr 200px 180px 200px 390px 1fr 260px 1fr;
@@ -222,7 +224,47 @@ body {
     width: 350px;
   }
 }
+/*NAVBAR SLUTT*/
+
+/* FLEXBOXES TIL FOOTER*/
+.parent {
+  height: 200px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.child1 {
+  height: 200px;
+  width: 200px;
+  flex: 0.5;
+}
+.child2 {
+  height: 200px;
+  width: 200px;
+  flex: 1;
+}
+.child3 {
+  height: 200px;
+  width: 200px;
+  flex: 1;
+}
+.child4 {
+  height: 200px;
+  width: 200px;
+  flex: 1;
+}
+.footer_link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer_link:hover {
+  text-decoration: none;
+  color: #00ffff;
+}
+
 /*ANDRE STØRRELSER SLUTT*/
+
 
 /* MAIN OG SECTION, skalering og margin mellom*/
 main {
@@ -345,4 +387,71 @@ section {
   font-size: 1.5vw;
   margin-top: -20%;
   margin-left: 45%;
+}
+
+/*GI GAVE CSS*/
+table {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+input {
+  background-color: rgb(40, 40, 40);
+  border: grey solid 3px;
+  border-radius: 3px;
+  transition: background-color 0.4s ease;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  color: #dddddd;
+  transition: color 0.4 ease;
+}
+
+input:focus {
+  background-color: #00ffff;
+  transition: background-color 0.4s ease;
+  color: #212121;
+  transition: color 0.4 ease;
+}
+
+input:hover {
+  background-color: #00ffff;
+  transition: background-color 0.4s ease;
+}
+
+#submit:hover {
+  font-family: "Verdana", "Courier New", Courier, monospace;
+  color: #212121;
+  font-weight: bold;
+  transition: color 0.4 ease;
+}
+
+#submit {
+  font-family: "Verdana", "Courier New", Courier, monospace;
+  color: #dddddd;
+  font-size: 1em;
+  font-weight: bold;
+  transition: color 0.4 ease;
+}
+
+#caps,
+#kopp,
+#t-skjorte,
+#rocket-launch {
+  width: 50px;
+  height: auto;
+}
+
+/* minsker inputfeltene i gave.html*/
+@media (max-width: 950px) {
+  #gate {
+    width: 100px;
+  }
+  #gatenummer {
+    width: 100px;
+  }
+  #postnummer {
+    width: 100px;
+  }
 }

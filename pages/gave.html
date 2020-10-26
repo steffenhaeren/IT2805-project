@@ -5,26 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gi gave</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    '
-    <script
-      src="https://kit.fontawesome.com/be80afe7db.js"
-      crossorigin="anonymous"
-    ></script>
-    <style>
-      input {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 40%;
-        text-align: left;
-        padding: 12px 20px;
-        margin: 8px 0;
-      }
-
-      #submit {
-        text-align: center;
-        margin: auto;
-      }
-    </style>
+    <script src="https://kit.fontawesome.com/be80afe7db.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -32,43 +13,89 @@
     </header>
 
     <main>
-      <h1>Støtt oss ved å gi gave</h1>
+      <form>
+        <h1>Støtt oss ved å gi gave!</h1>
 
-      Navn og etternavn: <br />
-      <input
-        id="navn"
-        type="text"
-        name="navn"
-        pattern="[A-Za-z* ]+[A-Za-z*]"
-        required
-      />
-      <br />
-      Postnummer: <br />
-      <input id="postnummer" type="number" name="postnummer" required /> <br />
-      Adresse: <br />
-      <input id="adresse" type="text" name="adresse" required /> <br />
-      Fax: <br />
-      <input id="fax" type="number" name="fax" required /> <br />
+        <h3>1. Fyll info!</h3>
 
-      Legge til merch? Velg så mye du vil! <br />
-      Obs Obs, prisen blir lagt til i donasjonsbeløpet<input
-        id="kopp"
-        type="checkbox"
-        name="kopp"
-      />
-      <br />
-      <input id="caps" type="checkbox" name="caps" /> <br />
-      <input id="t-skjorte" type="checkbox" name="t-skjorte" /> <br />
-      <input id="rakett-lauch" type="checkbox" name="rakett-lauch" /> <br />
+        <table>
+          <tr>
+            <td><label for="fornavn">Fornavn: </label></td>
+            <td><label for="etternavn">Etternavn: </label></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="fornavn" name="fornavn" placeholder="Ola" pattern="[a-zA-Z0-9]+" required></td>
+            <td><input type="text" id="etternavn" name="etternavn" placeholder="Nordmann" pattern="[a-zA-Z0-9]+" required></td>
+          </tr>
+        </table>
 
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      Donasjon: <br />
-      <input id="donasjon" type="number" name="donasjon" required /> <br />
+        <table>
+          <tr>
+            <td><label for="email">Epost: </label></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="email" name="email" placeholder="olanordmann@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" width="300" required></td>
+          </tr>
+        </table>
+       
+        <br>
+        
+        <table>
+          <tr>
+            <td><label for="gate">Gate: </label></td>
+            <td><label for="gatenummer">Gatenummer: </label></td>
+            <td><label for="postnummer">Postnummer: </label></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="gate" name="gate" placeholder="Månegata" pattern="[a-zA-Z0-9]+" required></td>
+            <td><input type="number" id="gatenummer" name="gatenummer" placeholder="42" pattern="[0-9]{4}" required></td>
+            <td><input type="number" id="postnummer" name="postnummer" placeholder="1337" pattern="[0-9]{4}" required></td>
+          </tr>
+        </table>
 
-      <input id="submit" type="submit" value="Doner :D" />
+        <h3>2. Velg merch!</h3>
+        
+        <input id="kopp" type="checkbox" name="kopp" value="50"><label for="kopp">Månepartikoppen (50,-)</label><br>
+        <input id="caps" type="checkbox" name="caps" value="150"><label for="caps">Måneparticapsen (150,-)</label><br>
+        <input id="t-skjorte" type="checkbox" name="t-skjorte" value="200"><label for="t-skjorte">Månepartigenser (200,-)</label><br>
+        <input id="rocket-launch" type="checkbox" name="rocket-launch" value="600000000"><label for="rocket-launch">Rocket-launch (600 000 000,-)</label><br>
+
+        <h3>3. Hvor mye ønsker du å donere?</h3>
+        <label for="donasjon">Donasjon: </label><input type="number" id="donasjon" name="donasjon" value="0" required><br><br>
+
+        <label for="totalt">Det blir totalt: </label><output type="number" id="totalt" name="totalt" required></output><br><br>
+        <input id="submit" type="submit" value="DONER!">
+      </form>
     </main>
 
-    <footer id="footer"></footer>
+    <script type="text/javascript" src="../script/gave.js"></script>
+
+    <footer>
+      <hr>
+      <div class="parent">
+        <div class="child1">
+          <h3>Logo</h3>
+        </div>
+        <div class="child2"><br>
+          <h3>Info</h3>
+          <p>Månegata 42, 1337 Månen</p>
+          <p>Kontonummer: 1234 56 78912</p>
+          <p>Vipps: 95148025</p>
+        </div>
+        <div class="child3"><br>
+          <h3>Pressehenvendelser</h3>
+          <p>presse@maanen.no</p>
+          <p>45102693</p>
+        </div>
+        <div class="child4"><br>
+          <h3>Sosiale medier</h3>
+          <p><i class="fab fa-facebook"></i><a class="footer_link" href="#">Facebook</a></p>
+          <p><i class="fab fa-instagram"></i><a class="footer_link" href="#">Instagram</a></p>
+          <p><i class="fab fa-twitter"></i><a class="footer_link" href="#">Twitter</a></p>
+          <p><i class="fab fa-youtube"></i><a class="footer_link" href="#">Youtube</a></p>
+        </div>
+      </div>
+    </footer>
 
     <script type="text/javascript" src="../script/script.js"></script>
   </body>
