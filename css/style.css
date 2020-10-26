@@ -20,12 +20,42 @@ li {
   font-size: 1.5em;
 }
 
-footer {
-  background-color: rgb(250, 0, 0);
-  height: 300px;
-  width: 100%;
-  bottom: 0;
-  position: relative;
+.parent {
+  height: 200px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+.child1 {
+  height: 200px;
+  width: 200px;
+  flex: 1;
+}
+.child2 {
+  height: 200px;
+  width: 200px;
+  flex: 1;
+}
+.child3 {
+  height: 200px;
+  width: 200px;
+  flex: 1;
+}
+.child4 {
+  height: 200px;
+  width: 200px;
+  flex: 1;
+}
+
+.footer_link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer_link:hover {
+  text-decoration: none;
+  color: #00ffff;
 }
 
 main {
