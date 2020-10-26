@@ -109,6 +109,7 @@ body {
 }
 /*NAVBAR SLUTT*/
 
+/* FLEXBOXES TIL FOOTER*/
 .parent {
   height: 200px;
   width: 80%;
@@ -144,6 +145,7 @@ body {
   color: #00ffff;
 }
 
+/* MAIN OG SECTION, skalering og margin mellom*/
 main {
   width: 70%;
   margin: auto;
@@ -161,6 +163,8 @@ section {
   display: table;
   clear: both;
 }
+
+/*universal avsnitt*/
 .avsnitt {
   width: 100%;
   margin: auto;
@@ -170,12 +174,15 @@ section {
   margin-bottom: 20px;
   font-size: 1.5em;
 }
+
+/*universal sentrert overskrift*/
 .header {
   width: 50%;
   margin: auto;
   text-align: center;
   margin-bottom: 20px;
 }
+
 #gif {
   width: 100%;
   border: 5px double white;
@@ -184,10 +191,11 @@ section {
 .politiker {
   border: 3px double white;
 }
+/* utvider portrettbildene på partiet.html */
 .bilde {
   width: 100%;
 }
-
+/* tekst under portrettbildene*/
 .bildetekst {
   width: 80%;
   margin: auto;
@@ -203,16 +211,22 @@ section {
   z-index: -1;
 }
 
+/* css til slideshow */
 .slideshow-container {
-  width: 635px;
-  height: 340px;
+  width: 100%;
+  height: auto;
   margin: auto;
-  border: 5px double black;
   overflow: hidden;
 }
-
 .slideshow-slide {
-  display: flex;
+  margin-top: -2px;
+  display: grid;
+  grid-template-columns: 100% 100% 100% 100% 100% 100% 100% 100%;
+}
+
+.slideshow-img {
+  width: 100%;
+  height: auto;
 }
 
 #prev {
@@ -222,10 +236,9 @@ section {
   color: #a9a9a9;
   position: absolute;
   z-index: 10;
-  margin-left: 10px;
-  margin-top: 150px;
+  margin-left: 5%;
+  margin-top: 25%;
 }
-
 #next {
   float: right;
   font-size: 50px;
@@ -233,10 +246,9 @@ section {
   color: #a9a9a9;
   position: absolute;
   z-index: 10;
-  margin-left: 600px;
-  margin-top: 150px;
+  margin-left: 95%;
+  margin-top: 25%;
 }
-
 #next:hover,
 #prev:hover {
   transition: color 0.4s ease;
