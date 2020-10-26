@@ -40,6 +40,15 @@ document.getElementById("navbar").appendChild(romfart);
 
 const støtt = document.createElement("a");
 støtt.id = "støtt";
-støtt.href = loca + "/gave.html";
-støtt.innerHTML = "<h1>Støtt oss</h1>";
+støtt.innerHTML = "<h1 id='far'>Støtt oss</h1>";
 document.getElementById("navbar").appendChild(støtt);
+const medlem = document.createElement("a");
+medlem.id = "medlem";
+medlem.href = loca + "/medlem.html";
+medlem.innerHTML = "<br><h1>Bli medlem</h1>";
+document.getElementById("far").appendChild(medlem);
+const gave = document.createElement("a");
+gave.id = "gave";
+gave.href = loca + "/gave.html";
+gave.innerHTML = "<br><h1>Gi gave</h1>";
+document.getElementById("far").appendChild(gave);
