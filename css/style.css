@@ -3,39 +3,45 @@ body {
   color: rgb(230, 230, 230);
   font-family: "Verdana", "Courier New", Courier, monospace;
   margin: 0;
+  overflow-x: hidden;
 }
 
 #navbar {
+  display: grid;
+  grid-template-columns: 1fr 200px 200px 200px 380px 1fr 200px 1fr;
+  height: 140px;
+  /* navbarens linje: */
   background-image: linear-gradient(white, white);
   background-size: 85% 1px;
   background-position-x: center;
   background-position-y: 100%;
   background-repeat: no-repeat;
-
-  display: grid;
-  grid-template-columns: 1fr 200px 200px 200px 380px 1fr 200px 1fr;
-  height: 140px;
-}
-#navbar > a {
-  margin: auto;
-  text-decoration: none;
-  color: white;
 }
 #navbar > a > h1 {
+  /* fancy underline: */
   transition: background-size 0.5s;
-
   background-image: linear-gradient(white, white);
   background-size: 0px 2px;
   background-position: 100% 100%;
   background-repeat: no-repeat;
+  /* text formatering: */
+  text-decoration: none;
+  color: white;
+  margin-top: 85px;
+  float: right;
 }
 #navbar > a:hover > h1 {
+  /* fancy underline: */
   background-image: linear-gradient(white, white);
   background-size: 100% 2px;
   background-position: 0 100%;
   background-repeat: no-repeat;
-
   transition: background-size 0.5s;
+}
+#navbar img {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
 }
 #logoa {
   grid-column-start: 2;
@@ -43,12 +49,56 @@ body {
 #støtt {
   grid-column-start: 7;
 }
-h1 {
-  margin-top: 60px;
-  margin-left: auto;
+@media (max-width: 1180px) {
+  #navbar {
+    grid-template-columns: 1fr 150px 150px 150px 285px 1fr 150px 1fr;
+    height: 105px;
+    font-size: 0.8pc;
+  }
+  #navbar > a > h1 {
+    margin-top: 70px;
+  }
 }
-#navbar img {
-  margin: auto;
+@media (max-width: 885px) {
+  #navbar {
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 50px 50px 50px 50px;
+    height: 200px;
+
+    background-size: 75% 1px;
+    background-position-x: 0;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+  }
+  #navbar > a > h1 {
+    margin-top: 15px;
+    float: left;
+    margin-left: 15px;
+    white-space: nowrap;
+  }
+  #navbar img {
+    margin-top: 50px;
+  }
+  #logoa {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  #n1 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  #n2 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+  #n3 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+  #støtt {
+    grid-column-start: 2;
+    grid-row-start: 4;
+  }
 }
 
 .parent {
@@ -57,7 +107,6 @@ h1 {
   margin: auto;
   display: flex;
 }
-
 .child1 {
   height: 200px;
   width: 200px;
@@ -78,12 +127,10 @@ h1 {
   width: 200px;
   flex: 1;
 }
-
 .footer_link {
   text-decoration: none;
   color: #ffffff;
 }
-
 .footer_link:hover {
   text-decoration: none;
   color: #00ffff;
@@ -92,23 +139,19 @@ h1 {
 main {
   width: 70%;
 }
-
 section {
   margin-bottom: 100px;
   margin-top: 100px;
 }
-
 .column33 {
   float: left;
   width: 33.333%;
 }
-
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 .avsnitt {
   width: 100%;
   margin: auto;
@@ -118,24 +161,20 @@ section {
   margin-bottom: 20px;
   font-size: 1.5em;
 }
-
 .header {
   width: 50%;
   margin: auto;
   text-align: center;
   margin-bottom: 20px;
 }
-
 #gif {
   width: 100%;
   border: 5px double white;
   border-radius: 5px;
 }
-
 .politiker {
   border: 3px double white;
 }
-
 .bilde {
   width: 100%;
 }
@@ -153,12 +192,6 @@ section {
   margin-left: -800px;
   position: absolute;
   z-index: -1;
-}
-
-@media (max-width: 940px) {
-  main {
-    width: 100%;
-  }
 }
 
 .slideshow-container {
