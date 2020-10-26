@@ -62,6 +62,7 @@ main {
   width: 50%;
   height: 100%;
   margin: auto;
+  margin-bottom: 100px;
 }
 
 .column16 {
