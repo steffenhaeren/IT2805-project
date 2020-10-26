@@ -9,7 +9,7 @@ const prev = document.querySelector("#prev");
 const next = document.querySelector("#next");
 
 let counter = 1;
-const size = slideshowImgs[0].clientWidth;
+let size = slideshowImgs[0].clientWidth;
 
 slideshowSlide.style.transform = "translate(" + -size * counter + "px)";
 
@@ -46,4 +46,13 @@ function reset() {
     counter = 1;
     slideshowSlide.style.transform = "translate(" + -size * counter + "px)";
   }
+}
+
+window.onresize = updateSize;
+
+function updateSize() {
+  size = slideshowImgs[counter].clientWidth;
+  slideshowSlide.style.transform = "translate(" + -size * counter + "px)";
+  slideshowSlide.style.transition = "transform 0s ease-in-out";
+  console.log(size);
 }
