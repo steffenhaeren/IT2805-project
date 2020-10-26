@@ -4,22 +4,6 @@ body {
   font-family: "Courier New", Courier, monospace;
 }
 
-p {
-  text-align: left;
-  margin: 15px;
-}
-li {
-  text-align: left;
-  margin-left: 30px;
-}
-
-#titel {
-  width: 100%;
-  text-align: center;
-  margin: 60px;
-  font-size: 1.5em;
-}
-
 .parent {
   height: 200px;
   width: 80%;
@@ -65,9 +49,14 @@ main {
   margin-bottom: 100px;
 }
 
-.column16 {
+section {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.column33 {
   float: left;
-  width: 16.666%;
+  width: 33.333%;
 }
 
 .row:after {
@@ -85,15 +74,6 @@ main {
   margin-bottom: 20px;
 }
 
-.avsnitt1 {
-  width: 80%;
-  margin: auto;
-  border: 3px double white;
-  padding: 10px;
-  margin-bottom: 20px;
-  position: relative;
-}
-
 .header {
   width: 50%;
   margin: auto;
@@ -105,10 +85,12 @@ main {
   width: 100%;
 }
 
+.politiker {
+  border: 3px double white;
+}
+
 .bilde {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 100%;
 }
 
 /* bildebakgrunnn til p3_changes.html*/
