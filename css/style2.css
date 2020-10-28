@@ -1,0 +1,35 @@
+@media (max-width: 1500px) {
+  body {
+    font-size: 0.65em;
+  }
+  main {
+    min-width: 80%;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  label {
+    font-size: 1.5em;
+  }
+  /*NAVBAR*/
+  /*grid templete setup:*/
+  #navbar {
+    grid-template-columns: 1fr 150px 110px 100px 220px 1fr 140px 1fr;
+    height: 95px;
+  }
+  /* text formatering: */
+  #navbar > *:not(:first-child) {
+    margin-top: 60px;
+  }
+  #navbar > a > img {
+    margin-top: 15px;
+  }
+  /*FOOTER*/
+  #footer {
+    grid-template-columns: 1fr 130px 300px 220px 190px 1fr;
+    height: 200px;
+  }
+}

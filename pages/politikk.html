@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <title>Politikk</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style2.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style3.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style4.css" />
     <script
       src="https://kit.fontawesome.com/be80afe7db.js"
       crossorigin="anonymous"
@@ -17,8 +20,8 @@
         <h1 class="center underlinje">Våre hjertesaker ♥</h1>
 
         <div class="grid4">
-          <div class="e1">
-            <h2 class="hover">Miljø</h2>
+          <div class="e1 gray sponge round">
+            <h2>Miljø</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -29,8 +32,8 @@
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
-          <div class="e2">
-            <h2 class="hover">Teknologi</h2>
+          <div class="e2 gray sponge round">
+            <h2>Teknologi</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -41,8 +44,8 @@
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
-          <div class="e3">
-            <h2 class="hover">Fremtidsatsing</h2>
+          <div class="e3 gray sponge round">
+            <h2>Fremtidsatsing</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -53,8 +56,8 @@
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
-          <div class="e4">
-            <h2 class="hover">Bærekraft</h2>
+          <div class="e4 gray sponge round">
+            <h2>Bærekraft</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -69,7 +72,7 @@
       </section>
 
       <section>
-        <div class="gray">
+        <div class="gray hover round">
           <h1 class="center underlinje">Vår visjon:</h1>
           <h2 class="center">
             Folket til månen, månen til folket! Framtiden er opp!
@@ -78,16 +81,17 @@
       </section>
 
       <section>
-        <div>
+        <div class="inline-block">
           <h2>Politikken A-Å og mer:</h2>
-          <input id="søkemotor" type="text" placeholder="Search.." />
-          <button><i class="fa fa-search"> </i></button>
-          <p id="outputt"></p>
+          <button id="søk" onclick="søk()"><i class="fa fa-search"> </i></button
+          ><input id="søkemotor" type="text" placeholder="Søk.." />
         </div>
+        <p id="outputt" class="gray round"></p>
       </section>
     </main>
 
     <footer id="footer"></footer>
+    <script type="text/javascript" src="../script/søk.js"></script>
     <script type="text/javascript" src="../script/script.js"></script>
   </body>
 </html>
