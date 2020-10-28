@@ -10,8 +10,8 @@ main {
   margin: auto;
 }
 section {
-  margin-bottom: 100px;
-  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 h1 {
   font-size: 2em;
@@ -115,7 +115,7 @@ p {
   /*grid oppset:*/
   display: grid;
   grid-template-columns: 1fr 180px 400px 300px 200px 1fr;
-  height: 300px;
+  height: 200px;
 }
 /*div og text formatering:*/
 #footer > div {
@@ -178,7 +178,7 @@ p {
     font-size: 0.8em;
   }
   main {
-    min-width: 100%;
+    min-width: 90%;
   }
   /*NAVBAR*/
   /*grid templete setup:*/
@@ -359,12 +359,14 @@ p {
 /* utvider portrettbildene på partiet.html */
 .bilde {
   width: 100%;
+  border: 3px solid white;
+  border-radius: 10px;
 }
 /* tekst under portrettbildene*/
 .bildetekst {
   width: 80%;
   margin: auto;
-  text-align: center;
+  text-align: justify;
   padding: 10px;
 }
 
@@ -440,12 +442,16 @@ table {
   margin: auto;
 }
 
+label {
+  font-size: 1.5vw;
+}
+
 input {
   background-color: rgb(40, 40, 40);
   border: grey solid 3px;
   border-radius: 3px;
   transition: background-color 0.4s ease;
-  width: 200px;
+  width: 100%;
   height: 50px;
   text-align: center;
   color: #dddddd;
@@ -474,9 +480,14 @@ input:hover {
 #submit {
   font-family: "Verdana", "Courier New", Courier, monospace;
   color: #dddddd;
-  font-size: 1em;
+  font-size: 2vw;
   font-weight: bold;
   transition: color 0.4 ease;
+  width: 20%;
+}
+
+#donasjon {
+  width: 50%;
 }
 
 #caps,
@@ -487,16 +498,99 @@ input:hover {
   height: auto;
 }
 
-/* minsker inputfeltene i gave.html*/
+/* GRID TIL PERS DETALJER PÅ gave.html*/
+.gaveGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  width: 50%;
+  height: 300px;
+  margin: auto;
+}
+.div1 {
+  grid-area: 1 / 1 / 2 / 4;
+}
+.div2 {
+  grid-area: 1 / 4 / 2 / 7;
+}
+.div3 {
+  grid-area: 2 / 1 / 3 / 7;
+}
+.div4 {
+  grid-area: 3 / 1 / 4 / 3;
+}
+.div5 {
+  grid-area: 3 / 3 / 4 / 5;
+}
+.div6 {
+  grid-area: 3 / 5 / 4 / 7;
+}
+
+/**/
+.grid6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.grid6 > .e1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+.grid6 > .e2 {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.grid6 > .e3 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+.grid6 > .e4 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+.grid6 > .e5 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.grid6 > .e6 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
 @media (max-width: 950px) {
-  #gate {
-    width: 100px;
+  .grid6 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
   }
-  #gatenummer {
-    width: 100px;
+  .grid6 > .e1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
   }
-  #postnummer {
-    width: 100px;
+  .grid6 > .e2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  .grid6 > .e3 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  .grid6 > .e4 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+  .grid6 > .e5 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+  .grid6 > .e6 {
+    grid-column-start: 2;
+    grid-row-start: 3;
   }
 }
 
