@@ -19,48 +19,47 @@
             <table>
                 
                 <tr>
-                    <td class="leftcolumn"><label for="fulltnavn">Fullt navn:</label></td>
+                    <td class="leftcolumn"><label for="fulltnavn">Fullt navn: *</label></td>
                     <td>
                         <input type="text" placeholder="Fullt navn" required>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="leftcolumn"><label for="adresse">Adresse:</label></td>
+                    <td class="leftcolumn"><label for="adresse">Adresse: *</label></td>
                     <td>
                         <input type="text" placeholder="Adresse" required>
                     </td>
                 </tr>
                 
                 <tr>
-                    <td class="leftcolumn"><label for="DOB">Fødselsdato:</label></td>
+                    <td class="leftcolumn"><label for="DOB">Fødselsdato: *</label></td>
                     <td>
                         <input type="date" name="birthdate" max="2020-12-31" min="1904-02-11" required>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="leftcolumn"><label for="email">E-mail:</label></td>
+                    <td class="leftcolumn"><label for="email">E-post: *</label></td>
                     <td>
-                        <input type="email" placeholder="E-mail" required>
+                        <input type="email" placeholder="E-post" required>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="leftcolumn"><label for="gender">Kjønn:</label></td>
+                    <td class="leftcolumn"><label for="gender">Kjønn: *</label></td>
                     <td>
                         <select required>
-                            <option value="">--------</option>
+                            <option value="Andre">Andre</option>
                             <option value="Mann">Mann</option>
                             <option value="Kvinne">Kvinne</option>
-                            <option value="Andre">Andre</option>
                             <option value="Ikke">Ønsker ikke oppgi</option>
                     </td>
                 </tr>
 
 
                 <tr>
-                    <td class="leftcolumn"><label for="medlemskap">Type medlemskap:</label></td>
+                    <td class="leftcolumn"><label for="medlemskap">Type medlemskap: *</label></td>
                     <td>
                         <select required>
                             <option value="ordinær">Ordinær kontigent (2020) (500,-)</option>
@@ -71,7 +70,7 @@
                 </tr>
 
                 <tr>
-                    <td class="leftcolumn"><label for="velkomstpakke">Ønsker velkomstpakke tilsendt i posten:</label></td>
+                    <td class="leftcolumn"><label for="velkomstpakke">Ønsker velkomstpakke tilsendt i posten: *</label></td>
                     <td>
                         <select required>
                             <option value="ja">Ja</option>
@@ -81,9 +80,15 @@
                 </tr>
                 
                 <tr>
-                    <td class="leftcolumn"><label for="avtale">Jeg har lest og godtar avtalen for medlemskap (se under):</label></td>
+                    <td class="leftcolumn"><label for="avtale">Jeg har lest og godtar avtalen for medlemskap (se under): *</label></td>
                     <td>
                         <input type="checkbox" name="avtale" value="True">Ja
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="bottom" colspan="2">
+                        <input type="submit" value="Send inn">
                     </td>
                 </tr>
             </table>
