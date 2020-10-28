@@ -1,9 +1,32 @@
 body {
   background-color: rgb(40, 40, 40);
-  color: rgb(230, 230, 230);
+  color: white;
   font-family: "Verdana", "Courier New", Courier, monospace;
   margin: 0;
   overflow-x: hidden;
+}
+main {
+  width: 70%;
+  margin: auto;
+}
+section {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+h1 {
+  font-size: 2em;
+  margin: 10px;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 10px;
+}
+h3 {
+  font-size: 1em;
+  margin: 10px;
+}
+p {
+  margin: 10px;
 }
 
 /*NAVBAR*/
@@ -12,14 +35,9 @@ body {
   position: relative;
   /*grid templete setup:*/
   display: grid;
-  grid-template-columns: 1fr 200px 180px 200px 390px 1fr 260px 1fr;
+  grid-template-columns: 1fr 200px 190px 180px 380px 1fr 260px 1fr;
   height: 140px;
   /* navbarens underste linje: */
-  background-image: linear-gradient(white, white);
-  background-size: 85% 1px;
-  background-position-x: center;
-  background-position-y: 100%;
-  background-repeat: no-repeat;
 }
 /* text formatering: */
 #navbar > a > h1 {
@@ -42,7 +60,7 @@ body {
   transition: background-size 0.5s;
 }
 /* logo formatering: */
-#navbar img {
+#navbar > a > img {
   margin-top: 20px;
   width: 100%;
   height: auto;
@@ -102,7 +120,7 @@ body {
 /*div og text formatering:*/
 #footer > div {
   margin: auto;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 #footer > div > p > a {
   text-decoration: none;
@@ -130,16 +148,18 @@ body {
 /*FOOTER SLUTT*/
 
 /*LITE VINDU*/
-@media (max-width: 1400px) {
+@media (max-width: 1350px) {
+  h1 {
+    font-size: 1.3em;
+  }
   main {
     min-width: 80%;
   }
   /*NAVBAR*/
   /*grid templete setup:*/
   #navbar {
-    grid-template-columns: 1fr 150px 130px 140px 280px 1fr 190px 1fr;
+    grid-template-columns: 1fr 150px 130px 120px 250px 1fr 180px 1fr;
     height: 105px;
-    font-size: 0.8pc;
   }
   /* text formatering: */
   #navbar > a > h1 {
@@ -153,7 +173,10 @@ body {
   }
 }
 /*MOBIL VERSJON*/
-@media (max-width: 950px) {
+@media (max-width: 900px) {
+  h1 {
+    font-size: 0.8em;
+  }
   main {
     min-width: 100%;
   }
@@ -161,8 +184,7 @@ body {
   /*grid templete setup:*/
   #navbar {
     grid-template-columns: 150px 1fr;
-    grid-template-rows: 30px 30px 30px 30px;
-    font-size: 0.5pc;
+    grid-template-rows: repeat(4, 24px);
     height: 120px;
 
     background-size: 0;
@@ -225,56 +247,78 @@ body {
   }
 }
 /*NAVBAR SLUTT*/
-
-/* FLEXBOXES TIL FOOTER*/
-.parent {
-  height: 200px;
-  width: 80%;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-}
-.child1 {
-  height: 200px;
-  width: 200px;
-  flex: 0.5;
-}
-.child2 {
-  height: 200px;
-  width: 200px;
-  flex: 1;
-}
-.child3 {
-  height: 200px;
-  width: 200px;
-  flex: 1;
-}
-.child4 {
-  height: 200px;
-  width: 200px;
-  flex: 1;
-}
-.footer_link {
-  text-decoration: none;
-  color: #ffffff;
-}
-.footer_link:hover {
-  text-decoration: none;
-  color: #00ffff;
-}
-
 /*ANDRE STØRRELSER SLUTT*/
 
+/*GLOBAL FLEX-GRID*/
+.grid4 {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+}
+.grid4 > .e1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+.grid4 > .e2 {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.grid4 > .e3 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+.grid4 > .e4 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+@media (max-width: 950px) {
+  .grid4 {
+    grid-template: 1fr 1fr 1fr 1fr / 1fr;
+  }
+  .grid4 > .e1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+  .grid4 > .e2 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+  }
+  .grid4 > .e3 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+  }
+  .grid4 > .e4 {
+    grid-row-start: 4;
+    grid-column-start: 1;
+  }
+}
+/*GLOBAL FLEX-GRID SLUTT*/
+
+/*GLOBALE STILER*/
+.center {
+  text-align: center;
+}
+.gray {
+  padding: 10px;
+  background-color: rgb(54, 54, 54);
+}
+.underlinje {
+  background-image: linear-gradient(white, white);
+  background-size: 85% 1px;
+  background-position-x: center;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+}
+/*GLOBALE EFFEKTER*/
+.hover {
+  color: white;
+  transition: 0.3s;
+}
+.hover:hover {
+  color: rgb(255, 136, 0);
+  transition: 0.3s;
+}
 
 /* MAIN OG SECTION, skalering og margin mellom*/
-main {
-  width: 70%;
-  margin: auto;
-}
-section {
-  margin-bottom: 100px;
-  margin-top: 100px;
-}
 .column33 {
   float: left;
   width: 33.333%;

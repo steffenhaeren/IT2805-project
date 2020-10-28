@@ -10,6 +10,8 @@ if (page == "hjem.html") {
   home = ".";
 }
 
+document.getElementById("navbar").className = "underlinje";
+
 const logoa = document.createElement("a");
 logoa.href = home + "/hjem.html";
 logoa.id = "logoa";
