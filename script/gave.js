@@ -23,6 +23,9 @@ function donate() {
 }
 
 function addDonasjon() {
+  if (donasjon.value == "") {
+    donasjon.value = 0;
+  }
   let verdi = parseInt(donasjon.value);
   total = total + verdi;
   updateOutput();
