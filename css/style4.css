@@ -5,7 +5,7 @@
   /*NAVBAR*/
   /*grid templete setup:*/
   #navbar {
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 170px 1fr;
     grid-template-rows: repeat(4, 24px);
     height: 98px;
 
@@ -13,14 +13,10 @@
   }
   /* text formatering: */
   #navbar > *:not(:first-child) {
-    margin-top: 10px;
+    margin-top: 1px;
     float: left;
-    white-space: nowrap;
   }
   /* grid plassering: */
-  #navbar img {
-    margin-top: 45px;
-  }
   #logoa {
     grid-column-start: 1;
     grid-row-start: 1;
@@ -43,6 +39,7 @@
     grid-column-start: 2;
     grid-row-start: 4;
     margin-left: 30%;
+    height: 14ch;
   }
   /*FOOTER*/
   #footer {
