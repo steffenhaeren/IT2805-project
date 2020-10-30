@@ -255,7 +255,6 @@
     overflow: hidden;
   }
   .slideshow-slide {
-    margin-top: -2px;
     display: grid;
     grid-template-columns: 100% 100% 100% 100% 100% 100% 100% 100%;
   }
@@ -414,7 +413,7 @@
     padding: 10px;
   }
 
-  /*GI GAVE CSS (pliz ikke bruk gennerelle typer, det fakker med alle andre sider. bruk ider eller classer)*/
+  /*GI GAVE CSS*/
   /*
   table {
     text-align: center;
@@ -472,5 +471,13 @@
   #rocket-launch {
     width: 50px;
     height: auto;
+  }
+
+  #lander {
+    position: fixed;
+    height: 100px;
+    margin-top: -100px;
+    margin-left: calc(100% - 80px);
+    z-index: -1;
   }
 }
