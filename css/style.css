@@ -414,7 +414,6 @@
   }
 
   /*GI GAVE CSS*/
-  /*
   table {
     text-align: center;
     width: 100%;
@@ -444,7 +443,7 @@
     background-color: #00ffff;
     transition: background-color 0.4s ease;
   }
-*/
+
   #submit:hover {
     font-family: "Verdana", "Courier New", Courier, monospace;
     color: #212121;
