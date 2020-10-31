@@ -84,17 +84,17 @@ t3.innerHTML = "<h3>Sosiale medier:</h3>";
 document.getElementById("footer").appendChild(t3);
 const ut1 = document.createElement("p");
 ut1.innerHTML =
-  "<i class='fab fa-facebook'></i> <a href='#' class='fancyUnderline'>Facebook</a>";
+  "<i class='fab fa-facebook'></i> <a href='https://www.1001spill.no/spill/russian_car_driver_hd' class='fancyUnderline'>Facebook</a>";
 document.getElementById("t3").appendChild(ut1);
 const ut2 = document.createElement("p");
 ut2.innerHTML =
-  "<i class='fab fa-instagram'></i> <a href='#' class='fancyUnderline'>Instagram</a>";
+  "<i class='fab fa-instagram'></i> <a href='https://ikkepedia.org/wiki/M%C3%A5nen' class='fancyUnderline'>Instagram</a>";
 document.getElementById("t3").appendChild(ut2);
 const ut3 = document.createElement("p");
 ut3.innerHTML =
-  "<i class='fab fa-twitter'></i> <a href='#' class='fancyUnderline'>Twitter</a>";
+  "<i class='fab fa-twitter'></i> <a href='https://boards.4channel.org/mlp/thread/36079387' class='fancyUnderline'>Twitter</a>";
 document.getElementById("t3").appendChild(ut3);
 const ut4 = document.createElement("p");
 ut4.innerHTML =
-  "<i class='fab fa-youtube'></i> <a href='#' class='fancyUnderline'>Youtube</a>";
+  "<i class='fab fa-youtube'></i> <a href='http://endless.horse/' class='fancyUnderline'>Youtube</a>";
 document.getElementById("t3").appendChild(ut4);
