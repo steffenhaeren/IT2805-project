@@ -117,7 +117,7 @@
     /*grid oppset:*/
     display: grid;
     grid-template-columns: 1fr 180px 330px 250px 200px 1fr;
-    height: 300px;
+    height: 200px;
   }
   /*div og text formatering:*/
   #footer > * {
@@ -367,16 +367,6 @@
 }
 
 /*ANNET*/
-@media {
-  .column33 {
-    float: left;
-    width: 33.333%;
-  }
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
   /*universal avsnitt*/
   .avsnitt {
@@ -387,14 +377,6 @@
     text-align: justify;
     margin-bottom: 20px;
     font-size: 1.5em;
-  }
-
-  /*universal sentrert overskrift*/
-  .header {
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 20px;
   }
 
   #gif {
