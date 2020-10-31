@@ -15,13 +15,20 @@ document.getElementById("navbar").className = "underlinje";
 const logoa = document.createElement("a");
 logoa.href = home + "/hjem.html";
 logoa.id = "logoa";
+
 document.getElementById("navbar").appendChild(logoa);
+const div = document.createElement("div");
+div.id = "logoDiv";
+document.getElementById("logoa").appendChild(div);
 const logo = document.createElement("img");
-logo.src = home + "/bilder/logo.png";
+logo.src = home + "/bilder/mp.png";
+logo.id = "l";
 logo.alt = "logo";
-logo.width = "100%";
-logo.height = "100%";
-document.getElementById("logoa").appendChild(logo);
+document.getElementById("logoDiv").appendChild(logo);
+const moon = document.createElement("img");
+moon.id = "lb";
+moon.src = home + "/bilder/logo.png";
+document.getElementById("logoDiv").appendChild(moon);
 
 const politikk = document.createElement("a");
 politikk.href = loca + "/politikk.html";
@@ -63,7 +70,7 @@ document.getElementById("dropdown").appendChild(gave);
 document.getElementById("footer").className = "underlinje";
 const logof = document.createElement("img");
 logof.id = "logof";
-logof.src = home + "/bilder/logo.png";
+logof.src = home + "/bilder/mp.png";
 document.getElementById("footer").appendChild(logof);
 
 const t1 = document.createElement("div");

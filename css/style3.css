@@ -12,8 +12,12 @@
   #navbar > *:not(:first-child) {
     margin-top: 55px;
   }
-  #navbar > a > img {
-    margin-top: 10px;
+  #logoDiv {
+    margin-top: 8px;
+    height: 68px;
+  }
+  #logoDiv:hover > #lb {
+    margin-top: -68px;
   }
   /*FOOTER*/
   #footer {
