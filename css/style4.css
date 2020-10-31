@@ -16,6 +16,13 @@
     margin-top: 1px;
     float: left;
   }
+  #logoDiv {
+    margin-top: 1px;
+    height: 85px;
+  }
+  #logoDiv:hover > #lb {
+    margin-top: -85px;
+  }
   /* grid plassering: */
   #logoa {
     grid-column-start: 1;
