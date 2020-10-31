@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="../css/style2.css" />
         <link rel="stylesheet" type="text/css" href="../css/style3.css" />
         <link rel="stylesheet" type="text/css" href="../css/style4.css" />
+        <link rel="icon" type="image/png" href="../bilder/rocket.png">
         <script src="https://kit.fontawesome.com/be80afe7db.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -55,7 +56,7 @@
                         <input type="text" id="email" name="email" placeholder="olanordmann@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                     </td>
                 </tr>
-
+              
                 <tr>
                     <td class="leftcolumn"><label for="gender">Kjønn: *</label></td>
                     <td>
@@ -67,18 +68,28 @@
                         </select>
                     </td>
                 </tr>
+                       
+                        <tr>
+                            <td class="leftcolumn"><label for="gender">Kjønn: *</label></td>
+                            <td>
+                                <select required>
+                                    <option value="Andre">Andre</option>
+                                    <option value="Mann">Mann</option>
+                                    <option value="Kvinne">Kvinne</option>
+                                    <option value="Ikke">Ønsker ikke oppgi</option>
+                            </td>
+                        </tr>
 
-
-                <tr>
-                    <td class="leftcolumn"><label for="medlemskap">Type medlemskap: *</label></td>
-                    <td>
-                        <select required>
-                            <option value="ordinær">Ordinær kontigent (2020) (400,-)</option>
-                            <option value="redusert">Redusert kontigent (2020) (100,-)</option>
-                            <option value="høy">Høy kontigent (2020) (900,-)</option>
-                        </select>
-                    </td>
-                </tr>
+                        <tr>
+                            <td class="leftcolumn"><label for="medlemskap">Type medlemskap: *</label></td>
+                            <td>
+                                <select required>
+                                    <option value="ordinær">Ordinær kontigent (2020) (400,-)</option>
+                                    <option value="redusert">Redusert kontigent (2020) (100,-)</option>
+                                    <option value="høy">Høy kontigent (2020) (900,-)</option>
+                                </select>
+                            </td>
+                        </tr>
 
                 <tr>
                     <td class="leftcolumn"><label for="velkomstpakke">Ønsker velkomstpakke tilsendt i posten: *</label></td>
@@ -102,8 +113,30 @@
                         <input type="submit" value="Send inn">
                     </td>
                 </tr>
+                        <tr>
+                            <td class="leftcolumn"><label for="velkomstpakke">Ønsker velkomstpakke tilsendt i posten: *</label></td>
+                            <td>
+                                <select required>
+                                    <option value="ja">Ja</option>
+                                    <option value="nei">Nei</option>
+                                </select>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="leftcolumn"><label for="avtale">Jeg har lest og godtar avtalen for medlemskap (se under): *</label></td>
+                            <td>
+                                <input type="checkbox" name="avtale" value="True">
+                            </td>
+                        </tr>
 
-            </table>
+                        <tr>
+                            <td class="bottom" colspan="2">
+                                <input type="submit" onclick="alert('Innsendingen er mottatt. Du vil få bekreftelse på e-post snart.')" value="Send inn">
+                            </td>
+                        </tr>
+
+                    </table>
             <br>
             <br>
             <h2 class="header">Om medlemskap</h2>
