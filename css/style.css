@@ -427,7 +427,7 @@
     margin: auto;
   }
 
-  input {
+  input, select {
     background-color: var(--backround);
     border: grey solid 3px;
     border-radius: 3px;
@@ -438,7 +438,7 @@
     color: #dddddd;
     transition: color 0.4 ease;
   }
-
+  
   input:focus {
     background-color: #00ffff;
     transition: background-color 0.4s ease;
