@@ -45,6 +45,7 @@
                     <td class="leftcolumn"><label for="birthdate">Fødselsdato: *</label></td>
                     <td>
                         <input type="date" id="birthdate" name="birthdate" max="2020-12-31" min="1904-02-11" required>
+                        <input id="datefield" type="date" name="birthdate" max="2010-12-31" min="1904-02-11" required>
                     </td>
                 </tr>
 
@@ -71,9 +72,9 @@
                     <td class="leftcolumn"><label for="medlemskap">Type medlemskap: *</label></td>
                     <td>
                         <select required>
-                            <option value="ordinær">Ordinær kontigent (2020) (500,-)</option>
-                            <option value="redusert">Redusert kontigent (2020) (150,-)</option>
-                            <option value="høy">Høy kontigent (2020) (1000,-)</option>
+                            <option value="ordinær">Ordinær kontigent (2020) (400,-)</option>
+                            <option value="redusert">Redusert kontigent (2020) (100,-)</option>
+                            <option value="høy">Høy kontigent (2020) (900,-)</option>
                         </select>
                     </td>
                 </tr>
@@ -97,23 +98,25 @@
 
                 <tr>
                     <td class="bottom" colspan="2">
-                        <input type="submit" value="Send inn">
+                        <input type="submit" onclick="alert('Innsendingen er mottatt. Du vil få bekreftelse på e-post snart.')" value="Send inn">
                     </td>
                 </tr>
+
             </table>
+            <br>
             <br>
             <h2 class="header">Om medlemskap</h2>
             <h3>Hva skjer når jeg blir medlem?</h3>
             <p>
                 Etter at du har meldt deg inn skjer følgende:
                 <br>
-                Vi får beskjed om ditt medlemskap og registrerer deg i våre medlemslister.
+                - Vi får beskjed om ditt medlemskap og registrerer deg i våre medlemslister.
                 <br>
-                Vi sender deg en velkomstpakke i posten om du har huket av for det. Denne inneholder litt mer informasjon om Månepartiet.
+                - Vi sender deg en velkomstpakke i posten om du har huket av for det. Denne inneholder litt mer informasjon om Månepartiet.
                 <br>
-                Vi gir beskjed til lokallagsleder som tar kontakt og inviterer deg med på aktiviteter. Du velger selv hvor mye du vil bidra.
+                - Vi gir beskjed til lokallagsleder som tar kontakt og inviterer deg med på aktiviteter. Du velger selv hvor mye du vil bidra.
                 <br>
-                Du blir satt opp på vårt månedlige nyhetsbrev.
+                - Du blir satt opp på vårt månedlige nyhetsbrev.
             </p>
         </section>
         </main>
@@ -123,7 +126,7 @@
 
  
 
-
+        <script type="text/javascript" src="../script/medlem.js"></script>
         <script type="text/javascript" src="../script/script.js"></script>
     </body>
 </html>
