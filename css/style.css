@@ -487,8 +487,18 @@
     margin-left: calc(100% - 80px);
     z-index: -1;
   }
+
+  td{
+    padding: 5px;
+  }
+
+  table{
+    width: 50%;
+    margin: auto;
+  }
+  
+  td.leftcolumn{
+    text-align: left;
+  }
 }
 
-td.leftcolumn{
-  text-align: left;
-}
