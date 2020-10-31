@@ -488,3 +488,7 @@
     z-index: -1;
   }
 }
+
+td.leftcolumn{
+  text-align: left;
+}
