@@ -59,7 +59,6 @@
                   name="email"
                   placeholder="olanordmann@email.com"
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                  width="300"
                   required
                 />
               </div>
@@ -81,7 +80,8 @@
                   id="gatenummer"
                   name="gatenummer"
                   placeholder="42"
-                  pattern="[0-9]{4}"
+                  min="0"
+                  max="9999"
                   required
                 />
               </div>
@@ -92,7 +92,8 @@
                   id="postnummer"
                   name="postnummer"
                   placeholder="1337"
-                  pattern="[0-9]{4}"
+                  min="0"
+                  max="9999"
                   required
                 />
               </div>
@@ -134,7 +135,7 @@
                 required
               /><br /><br />
               <label for="totalt">Det blir totalt: </label
-              ><output type="number" id="totalt" name="totalt" required></output
+              ><output id="totalt" name="totalt"></output
               ><br /><br />
               <input id="submit" type="submit" value="DONER!" />
             </section>
@@ -143,12 +144,10 @@
       </section>
     </main>
 
-    <script type="text/javascript" src="../script/gave.js"></script>
+    <script src="../script/gave.js"></script>
 
-    <footer>
       <footer id="footer"></footer>
-    </footer>
 
-    <script type="text/javascript" src="../script/script.js"></script>
+    <script src="../script/script.js"></script>
   </body>
 </html>
