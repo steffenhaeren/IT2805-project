@@ -235,14 +235,13 @@
   }
   .sponge {
     margin: 20px;
-    transition: margin 0.5s;
+    padding: 0px;
+    transition: margin 0.5s, padding 0.5s;
   }
   .sponge:hover {
     margin: 0px;
-    transition: margin 0.5s;
-  }
-  .sponge > p {
-    max-width: 30vw;
+    padding: 20px;
+    transition: margin 0.5s, padding 0.5s;
   }
 }
 
@@ -344,6 +343,13 @@
     width: calc(100% - 35ch);
     float: right;
     margin-top: 5px;
+
+    background-color: var(--text);
+    border: grey solid 0px;
+    border-radius: 0px;
+    height: auto;
+    text-align: left;
+    color: black;
   }
   #søk {
     border: none;
