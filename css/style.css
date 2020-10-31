@@ -460,12 +460,13 @@
 
   #submit {
     font-family: "Verdana", "Courier New", Courier, monospace;
-    color: #dddddd;
+    color: lightgray;
     font-size: 2vw;
     font-weight: bold;
     transition: color 0.4 ease;
     width: 20%;
   }
+
 
   #donasjon {
     width: 50%;
