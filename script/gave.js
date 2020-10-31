@@ -18,8 +18,21 @@ rocket.addEventListener("change", addRocket);
 const donasjon = get("#donasjon");
 donasjon.addEventListener("change", addDonasjon);
 
+const reset = get("#reset");
+reset.addEventListener("click", reset_total);
+
 function donate() {
   console.log("hei");
+}
+
+function reset_total() {
+  get("#kopp").checked = false;
+  get("#caps").checked = false;
+  get("#t-skjorte").checked = false;
+  get("#rocket-launch").checked = false;
+  get("#donasjon").value = 0;
+  total = 0;
+  updateOutput();
 }
 
 function addDonasjon() {
