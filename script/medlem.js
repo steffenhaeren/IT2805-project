@@ -11,3 +11,4 @@ if(dd<10){
 
 today = (yyyy-13)+'-'+mm+'-'+dd; // max er i dag for 13 år siden! (man må være 13 for å bli medlem)
 document.getElementById("datefield").setAttribute("max", today);
+

@@ -428,7 +428,8 @@
     margin: auto;
   }
 
-  input, select {
+  input,
+  select {
     background-color: var(--backround);
     border: grey solid 3px;
     border-radius: 3px;
@@ -439,7 +440,7 @@
     color: #dddddd;
     transition: color 0.4 ease;
   }
-  
+
   input:focus {
     background-color: #00ffff;
     transition: background-color 0.4s ease;
@@ -468,6 +469,23 @@
     width: 20%;
   }
 
+  #reset:hover {
+    font-family: "Verdana", "Courier New", Courier, monospace;
+    color: #212121;
+    background-color: #00ffff;
+    transition: background-color 0.4s ease;
+    font-weight: bold;
+    transition: color 0.4 ease;
+  }
+
+  #reset {
+    font-family: "Verdana", "Courier New", Courier, monospace;
+    color: lightgray;
+    font-size: 1vw;
+    font-weight: bold;
+    transition: color 0.4 ease;
+    width: 10%;
+  }
 
   #donasjon {
     width: 50%;
@@ -489,17 +507,16 @@
     z-index: -1;
   }
 
-  td{
+  td {
     padding: 5px;
   }
 
-  table{
+  table {
     width: 50%;
     margin: auto;
   }
-  
-  td.leftcolumn{
+
+  td.leftcolumn {
     text-align: left;
   }
 }
-
