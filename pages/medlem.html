@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="no">
     <head>
         <title>Bli medlem</title>
         <meta charset = "UTF-8">
@@ -40,14 +40,14 @@
                 <tr>
                     <td class="leftcolumn"><label for="gatenummer">Gatenummer: *</label></td>
                     <td>
-                        <input type="number" id="gatenummer" name="gatenummer" placeholder="42" pattern="[0-9]{4}" required>
+                        <input type="number" id="gatenummer" name="gatenummer" placeholder="42" min="0" max="9999" required>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="leftcolumn"><label for="birthdate">Fødselsdato: *</label></td>
                     <td>
-                        <input type="date" id="birthdate" name="birthdate" max="2020-12-31" min="1904-02-11" required>
+                        <input type="date" id="datefield" name="birthdate" max="2020-12-31" min="1904-02-11" required>
                     </td>
                 </tr>
 
@@ -61,7 +61,7 @@
                 <tr>
                     <td class="leftcolumn"><label for="gender">Kjønn: *</label></td>
                     <td>
-                        <select required>
+                        <select id="gender" name="gender">
                             <option value="Andre">Andre</option>
                             <option value="Mann">Mann</option>
                             <option value="Kvinne">Kvinne</option>
@@ -73,7 +73,7 @@
                         <tr>
                             <td class="leftcolumn"><label for="medlemskap">Type medlemskap: *</label></td>
                             <td>
-                                <select required>
+                                <select id="medlemskap" name="medlemskap">
                                     <option value="ordinær">Ordinær kontigent (2020) (400,-)</option>
                                     <option value="redusert">Redusert kontigent (2020) (100,-)</option>
                                     <option value="høy">Høy kontigent (2020) (900,-)</option>
@@ -84,7 +84,7 @@
                 <tr>
                     <td class="leftcolumn"><label for="velkomstpakke">Ønsker velkomstpakke tilsendt i posten: *</label></td>
                     <td>
-                        <select required>
+                        <select id="velkomstpakke" name="velkomstpakke">
                             <option value="ja">Ja</option>
                             <option value="nei">Nei</option>
                         </select>
@@ -94,7 +94,7 @@
                 <tr>
                     <td class="leftcolumn"><label for="avtale">Jeg har lest og godtar avtalen for medlemskap (se under): *</label></td>
                     <td>
-                        <input type="checkbox" name="avtale" value="True" required>
+                        <input type="checkbox" id="avtale" name="avtale" value="True" required>
                     </td>
                 </tr>
 
@@ -107,7 +107,18 @@
                     </table>
             <br>
             <br>
+            <h2 class="header">Avtale for medlemskap</h2>
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>       
+            <br>
+            <br>
             <h2 class="header">Om medlemskap</h2>
+            <br>
             <h3>Hva skjer når jeg blir medlem?</h3>
             <p>
                 Etter at du har meldt deg inn skjer følgende:
@@ -129,8 +140,8 @@
 
  
 
-        <script type="text/javascript" src="../script/medlem.js"></script>
-        <script type="text/javascript" src="../script/script.js"></script>
+        <script src="../script/medlem.js"></script>
+        <script src="../script/script.js"></script>
     </body>
 </html>
     
