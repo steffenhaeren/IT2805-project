@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="no">
     <head>
         <meta charset = "UTF-8">
         <title>medlem</title>
@@ -60,7 +60,7 @@
                 <tr>
                     <td class="leftcolumn"><label for="gender">Kjønn: *</label></td>
                     <td>
-                        <select required>
+                        <select id="gender" name="gender">
                             <option value="Andre">Andre</option>
                             <option value="Mann">Mann</option>
                             <option value="Kvinne">Kvinne</option>
@@ -72,7 +72,7 @@
                         <tr>
                             <td class="leftcolumn"><label for="medlemskap">Type medlemskap: *</label></td>
                             <td>
-                                <select required>
+                                <select id="medlemskap" name="medlemskap">
                                     <option value="ordinær">Ordinær kontigent (2020) (400,-)</option>
                                     <option value="redusert">Redusert kontigent (2020) (100,-)</option>
                                     <option value="høy">Høy kontigent (2020) (900,-)</option>
@@ -83,7 +83,7 @@
                 <tr>
                     <td class="leftcolumn"><label for="velkomstpakke">Ønsker velkomstpakke tilsendt i posten: *</label></td>
                     <td>
-                        <select required>
+                        <select id="velkomstpakke" name="velkomstpakke">
                             <option value="ja">Ja</option>
                             <option value="nei">Nei</option>
                         </select>
@@ -93,7 +93,7 @@
                 <tr>
                     <td class="leftcolumn"><label for="avtale">Jeg har lest og godtar avtalen for medlemskap (se under): *</label></td>
                     <td>
-                        <input type="checkbox" name="avtale" value="True" required>
+                        <input type="checkbox" id="avtale" name="avtale" value="True" required>
                     </td>
                 </tr>
 
@@ -139,8 +139,8 @@
 
  
 
-        <script type="text/javascript" src="../script/medlem.js"></script>
-        <script type="text/javascript" src="../script/script.js"></script>
+        <script src="../script/medlem.js"></script>
+        <script src="../script/script.js"></script>
     </body>
 </html>
     
