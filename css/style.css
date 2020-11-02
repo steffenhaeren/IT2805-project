@@ -61,7 +61,7 @@
   #navbar > a {
     height: 0;
   }
-  /* logo formatering: */
+  /*logo formatering:*/
   #logoDiv {
     margin-top: 20px;
     width: 100%;
@@ -428,7 +428,8 @@
     margin: auto;
   }
 
-  input, select {
+  input,
+  select {
     background-color: var(--backround);
     border: grey solid 3px;
     border-radius: 3px;
@@ -439,7 +440,7 @@
     color: #dddddd;
     transition: color 0.4 ease;
   }
-  
+
   input:focus {
     background-color: #00ffff;
     transition: background-color 0.4s ease;
@@ -468,7 +469,6 @@
     width: 20%;
   }
 
-
   #donasjon {
     width: 50%;
   }
@@ -489,17 +489,16 @@
     z-index: -1;
   }
 
-  td{
+  td {
     padding: 5px;
   }
 
-  table{
+  table {
     width: 50%;
     margin: auto;
   }
-  
-  td.leftcolumn{
+
+  td.leftcolumn {
     text-align: left;
   }
 }
-
