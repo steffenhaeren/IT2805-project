@@ -1,8 +1,6 @@
 let total = 0;
 
-const submit = get("#submit");
-submit.addEventListener("click", donate);
-
+//event listeres
 const caps = get("#caps");
 caps.addEventListener("change", addCaps);
 
@@ -21,10 +19,11 @@ donasjon.addEventListener("change", addDonasjon);
 const reset = get("#reset");
 reset.addEventListener("click", reset_total);
 
-function donate() {
-  console.log("hei");
+function submit_form() {
+  alert("Du donerte " + total + " kroner, tusen takk!");
 }
 
+// funksjon som resetter total
 function reset_total() {
   get("#kopp").checked = false;
   get("#caps").checked = false;
@@ -35,6 +34,7 @@ function reset_total() {
   updateOutput();
 }
 
+// legger til verdiet i donasjon inputfeltet, hvis input-feltet er tomt settes verdien til 0 for å unngå å få NaN
 function addDonasjon() {
   if (donasjon.value == "") {
     donasjon.value = 0;
@@ -45,6 +45,7 @@ function addDonasjon() {
   console.log(total);
 }
 
+// funksjoner som legger til verdien til merchen
 function addCaps() {
   let verdi = parseInt(this.value);
   if (this.checked) {
@@ -89,11 +90,13 @@ function addRocket() {
   console.log(total);
 }
 
+// funksjon som oppdaterer totalverdien
 function updateOutput() {
   const output = get("#totalt");
   output.innerHTML = total;
 }
 
+// funksjon som gjør livet enklere
 function get(selector) {
   return document.querySelector(selector);
 }

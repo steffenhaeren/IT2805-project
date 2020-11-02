@@ -1,9 +1,12 @@
+console.log("søk funksjon lastet inn");
+//funksjon for å ha samme text til samme ord:
 let last = "";
 let verdi = "";
-const søk = () => {
+//søkefunksjon:
+const sok = () => {
   last = verdi;
-  verdi = document.getElementById("søkemotor").value;
-  if (document.getElementById("søkemotor").value && verdi != last) {
+  verdi = document.getElementById("sokemotor").value;
+  if (document.getElementById("sokemotor").value && verdi != last) {
     let text = "";
     const lorem =
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
@@ -20,3 +23,11 @@ const søk = () => {
     document.getElementById("outputt").innerText = verdi + ":" + text;
   }
 };
+//få enterfunskjonen til å funke
+document
+  .getElementById("sokemotor")
+  .addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+      sok();
+    }
+  });
