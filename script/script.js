@@ -1,8 +1,8 @@
-//NAVBAR:
+//finner hvor vi er i filstrukturen
 const path = window.location.pathname;
 const page = path.split("/").pop();
 console.log(`navbar lastet inn på side ${page}.`);
-
+//lager pathsene til sidene pga hjem.html befinner seg et annet sted enn pages
 let loca = ".";
 let home = "..";
 if (page == "hjem.html") {
@@ -10,12 +10,12 @@ if (page == "hjem.html") {
   home = ".";
 }
 
+//NAVBAR:
 document.getElementById("navbar").className = "underlinje";
-
 const logoa = document.createElement("a");
 logoa.href = home + "/hjem.html";
 logoa.id = "logoa";
-
+//logo med animasjon:
 document.getElementById("navbar").appendChild(logoa);
 const div = document.createElement("div");
 div.id = "logoDiv";
@@ -29,25 +29,23 @@ const moon = document.createElement("img");
 moon.id = "lb";
 moon.src = home + "/bilder/logo.png";
 document.getElementById("logoDiv").appendChild(moon);
-
+/*de forsjellige linkene*/
 const politikk = document.createElement("a");
 politikk.href = loca + "/politikk.html";
 politikk.innerHTML = "<h1 class='fancyUnderline'>Politikk</h1>";
 politikk.id = "n1";
 document.getElementById("navbar").appendChild(politikk);
-
 const partiet = document.createElement("a");
 partiet.href = loca + "/partiet.html";
 partiet.innerHTML = "<h1 class='fancyUnderline'>Partiet</h1>";
 partiet.id = "n2";
 document.getElementById("navbar").appendChild(partiet);
-
 const romfart = document.createElement("a");
 romfart.href = loca + "/romfart.html";
 romfart.innerHTML = "<h1 class='fancyUnderline'>Romfart på 1,2,3</h1>";
 romfart.id = "n3";
 document.getElementById("navbar").appendChild(romfart);
-
+/*droppdown-meny*/
 const dropdown = document.createElement("div");
 dropdown.id = "dropdown";
 document.getElementById("navbar").appendChild(dropdown);
@@ -68,11 +66,12 @@ document.getElementById("dropdown").appendChild(gave);
 
 //FOOTER:
 document.getElementById("footer").className = "underlinje";
+//logo:
 const logof = document.createElement("img");
 logof.id = "logof";
 logof.src = home + "/bilder/mp.png";
 document.getElementById("footer").appendChild(logof);
-
+//kontaktinfo
 const t1 = document.createElement("div");
 t1.id = "t1";
 t1.innerHTML =
@@ -84,7 +83,7 @@ t2.id = "t2";
 t2.innerHTML =
   "<h3>Pressehenvendelser:</h3><p>presse@maanen.no</p><p>45102693</p>";
 document.getElementById("footer").appendChild(t2);
-
+//linker:
 const t3 = document.createElement("div");
 t3.id = "t3";
 t3.innerHTML = "<h3>Sosiale medier:</h3>";

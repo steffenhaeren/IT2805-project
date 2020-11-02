@@ -1,5 +1,7 @@
+//funksjon for å ha samme text til samme ord:
 let last = "";
 let verdi = "";
+//søkefunksjon:
 const søk = () => {
   last = verdi;
   verdi = document.getElementById("søkemotor").value;
@@ -20,3 +22,11 @@ const søk = () => {
     document.getElementById("outputt").innerText = verdi + ":" + text;
   }
 };
+//få enterfunskjonen til å funke
+document
+  .getElementById("søkemotor")
+  .addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+      søk();
+    }
+  });
