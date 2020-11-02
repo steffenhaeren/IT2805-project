@@ -1,14 +1,17 @@
 console.log("bildegalleri lastet");
 
+// henter bildegalleriet og bildene
 const slideshowSlide = document.querySelector(".slideshow-slide");
 const slideshowImgs = document.querySelectorAll(".slideshow-slide img");
 
-// knappene
+// prev og next knappene
 
 const prev = document.querySelector("#prev");
 const next = document.querySelector("#next");
 
+// starter på første bilde
 let counter = 1;
+// henter størrelsen på bildet
 let size = slideshowImgs[0].clientWidth;
 
 slideshowSlide.style.transform = "translate(" + -size * counter + "px)";
@@ -36,6 +39,7 @@ function prev_function() {
   slideshowSlide.style.transform = "translate(" + -size * counter + "px)";
 }
 
+// hvis bruker er på første eller siste bildet, vil css-en settes til null og counteren vil oppdateres
 function reset() {
   if (slideshowImgs[counter].id === "lastClone") {
     slideshowSlide.style.transition = "none";
@@ -48,8 +52,10 @@ function reset() {
   }
 }
 
+// oppdaterer size-variabelen hver gang bruker skalerer siden
 window.onresize = updateSize;
 
+// funksjon som oppdaterer size-var, og oppdaterer css-en til slideshowet
 function updateSize() {
   size = slideshowImgs[counter].clientWidth;
   slideshowSlide.style.transform = "translate(" + -size * counter + "px)";
