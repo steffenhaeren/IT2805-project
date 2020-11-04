@@ -1,5 +1,7 @@
 console.log("bildegalleri lastet");
 
+setInterval(next_function, 5000);
+
 // henter bildegalleriet og bildene
 const slideshowSlide = document.querySelector(".slideshow-slide");
 const slideshowImgs = document.querySelectorAll(".slideshow-slide img");

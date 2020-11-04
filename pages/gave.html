@@ -8,138 +8,135 @@
     <link rel="icon" type="image/png" href="../img/rocket.png" />
   </head>
   <body>
-    <header>
-      <div id="navbar"></div>
-    </header>
+    <header id="navbar"></header>
 
     <main>
       <section>
         <h1 class="center underlinje">Støtt oss ved å gi gave!</h1>
       </section>
 
- 
-        <div class="avsnitt">
+      <div class="avsnitt">
+        <br />
+        <form onsubmit="submit_form()">
+          <h3 class="center">1. Fyll info!</h3>
           <br />
-          <form onsubmit="submit_form()">
-            <h3 class="center">1. Fyll info!</h3>
-            <br />
-            <div class="gaveGrid">
-              <div class="div1">
-                <label for="fornavn">Fornavn: </label><br />
-                <input
-                  type="text"
-                  id="fornavn"
-                  name="fornavn"
-                  placeholder="Ola"
-                  pattern="^[a-zA-Z-æøåÆØÅ]+$"
-                  required
-                />
-              </div>
-              <div class="div2">
-                <label for="etternavn">Etternavn: </label><br />
-                <input
-                  type="text"
-                  id="etternavn"
-                  name="etternavn"
-                  placeholder="Nordmann"
-                  pattern="^[a-zA-Z-æøåÆØÅ]+$"
-                  required
-                />
-              </div>
-              <div class="div3">
-                <label for="email">Epost: </label><br />
-                <input
-                  type="text"
-                  id="email"
-                  name="email"
-                  placeholder="olanordmann@email.com"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                  required
-                />
-              </div>
-              <div class="div4">
-                <label for="gate">Gate: </label><br />
-                <input
-                  type="text"
-                  id="gate"
-                  name="gate"
-                  placeholder="Månegata"
-                  pattern="^[a-zA-Z-æøåÆØÅ]+$"
-                  required
-                />
-              </div>
-              <div class="div5">
-                <label for="gatenummer">Gatenummer: </label><br />
-                <input
-                  type="number"
-                  id="gatenummer"
-                  name="gatenummer"
-                  placeholder="42"
-                  min="0"
-                  max="9999"
-                  required
-                />
-              </div>
-              <div class="div6">
-                <label for="postnummer">Postnummer: </label><br />
-                <input
-                  type="number"
-                  id="postnummer"
-                  name="postnummer"
-                  placeholder="1337"
-                  min="0"
-                  max="9999"
-                  required
-                />
-              </div>
-            </div>
-
-            <div class="center">
-              <br />
-              <h3>2. Velg merch!</h3>
-              <br />
-              <input id="kopp" type="checkbox" name="kopp" value="50" /><label
-                for="kopp"
-                >Månepartikoppen (50,-)</label
-              ><br />
-              <input id="caps" type="checkbox" name="caps" value="150" /><label
-                for="caps"
-                >Måneparticapsen (150,-)</label
-              ><br />
+          <div class="gaveGrid">
+            <div class="div1">
+              <label for="fornavn">Fornavn: </label><br />
               <input
-                id="t-skjorte"
-                type="checkbox"
-                name="t-skjorte"
-                value="200"
-              /><label for="t-skjorte">Månepartigenser (200,-)</label><br />
-              <input
-                id="rocket-launch"
-                type="checkbox"
-                name="rocket-launch"
-                value="600000000"
-              /><label for="rocket-launch">Rocket-launch (600 000 000,-)</label
-              ><br />
-            </div>
-
-            <section class="center">
-              <h3 class="center">3. Hvor mye ønsker du å donere?</h3>
-              <br />
-              <label for="donasjon">Donasjon: </label><br /><input
-                type="number"
-                id="donasjon"
-                name="donasjon"
+                type="text"
+                id="fornavn"
+                name="fornavn"
+                placeholder="Ola"
+                pattern="^[a-zA-Z-æøåÆØÅ]+$"
                 required
-              /><br /><br />
-              <label for="totalt">Det blir totalt: </label
-              ><output id="totalt" name="totalt"></output><br /><br />
-              <input id="submit" type="submit" value="DONER!" />
-            </section>
-          </form>
-          <div class="center">
-            <input type="submit" id="reset" value="Reset total" />
+              />
+            </div>
+            <div class="div2">
+              <label for="etternavn">Etternavn: </label><br />
+              <input
+                type="text"
+                id="etternavn"
+                name="etternavn"
+                placeholder="Nordmann"
+                pattern="^[a-zA-Z-æøåÆØÅ]+$"
+                required
+              />
+            </div>
+            <div class="div3">
+              <label for="email">Epost: </label><br />
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="olanordmann@email.com"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required
+              />
+            </div>
+            <div class="div4">
+              <label for="gate">Gate: </label><br />
+              <input
+                type="text"
+                id="gate"
+                name="gate"
+                placeholder="Månegata"
+                pattern="[A-Za-z* ]+[A-Za-z*]"
+                required
+              />
+            </div>
+            <div class="div5">
+              <label for="gatenummer">Gatenummer: </label><br />
+              <input
+                type="number"
+                id="gatenummer"
+                name="gatenummer"
+                placeholder="42"
+                min="0"
+                max="9999"
+                required
+              />
+            </div>
+            <div class="div6">
+              <label for="postnummer">Postnummer: </label><br />
+              <input
+                type="number"
+                id="postnummer"
+                name="postnummer"
+                placeholder="1337"
+                min="0"
+                max="9999"
+                required
+              />
+            </div>
           </div>
+
+          <div class="center">
+            <br />
+            <h3>2. Velg merch!</h3>
+            <br />
+            <input id="kopp" type="checkbox" name="kopp" value="50" /><label
+              for="kopp"
+              >Månepartikoppen (50,-)</label
+            ><br />
+            <input id="caps" type="checkbox" name="caps" value="150" /><label
+              for="caps"
+              >Måneparticapsen (150,-)</label
+            ><br />
+            <input
+              id="t-skjorte"
+              type="checkbox"
+              name="t-skjorte"
+              value="200"
+            /><label for="t-skjorte">Månepartigenser (200,-)</label><br />
+            <input
+              id="rocket-launch"
+              type="checkbox"
+              name="rocket-launch"
+              value="600000000"
+            /><label for="rocket-launch">Rocket-launch (600 000 000,-)</label
+            ><br />
+          </div>
+
+          <section class="center">
+            <h3 class="center">3. Hvor mye ønsker du å donere?</h3>
+            <br />
+            <label for="donasjon">Donasjon: </label><br /><input
+              type="number"
+              id="donasjon"
+              name="donasjon"
+              value="0"
+              required
+            /><br /><br />
+            <label for="totalt">Det blir totalt: </label
+            ><output id="totalt" name="totalt"></output><br /><br />
+            <input id="submit" type="submit" value="DONER!" />
+          </section>
+        </form>
+        <div class="center">
+          <input type="submit" id="reset" value="Reset total" />
         </div>
-  
+      </div>
     </main>
     <footer id="footer"></footer>
 
