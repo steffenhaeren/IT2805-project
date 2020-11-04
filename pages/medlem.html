@@ -8,15 +8,13 @@
     <link rel="icon" type="image/png" href="../img/rocket.png" />
   </head>
   <body>
-    <header>
-      <div id="navbar"></div>
-    </header>
+    <header id="navbar"></header>
 
     <main>
-        <section>
-            <form onsubmit="submit_form()" >
-        <h1 class="center underlinje">Bli medlem!</h1>
-        <p class="center">Felter markert med * er obligatoriske.</p>
+      <section>
+        <form onsubmit="submit_form()">
+          <h1 class="center underlinje">Bli medlem!</h1>
+          <p class="center">Felter markert med * er obligatoriske.</p>
           <table>
             <tr>
               <td class="leftcolumn">
@@ -42,7 +40,7 @@
                   id="gate"
                   name="gate"
                   placeholder="Månegata"
-                  pattern="^[a-zA-Z-æøåÆØÅ]+$"
+                  pattern="[A-Za-z* ]+[A-Za-z*]"
                   required
                 />
               </td>
@@ -58,6 +56,23 @@
                   id="gatenummer"
                   name="gatenummer"
                   placeholder="42"
+                  min="0"
+                  max="9999"
+                  required
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="leftcolumn">
+                <label for="postnummer">Postnummer: *</label>
+              </td>
+              <td>
+                <input
+                  type="number"
+                  id="postnummer"
+                  name="postnummer"
+                  placeholder="1337"
                   min="0"
                   max="9999"
                   required

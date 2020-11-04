@@ -320,7 +320,7 @@ a {
   width: 20%;
   height: auto;
   font-size: 1.5vw;
-  margin-top: -20%;
+  margin-top: -25%;
   margin-left: 45%;
 }
 
@@ -398,13 +398,37 @@ a {
   font-size: 1.5em;
 }
 
-#gif {
+#vidiogif {
+  display: block;
+  width: 100%;
+  border: 5px double var(--text);
+  border-radius: 5px;
+}
+#bildegif {
+  display: none;
+  width: 100%;
+  border: 5px double var(--text);
+  border-radius: 5px;
+}
+.gif {
   width: 100%;
   border: 5px double var(--text);
   border-radius: 5px;
 }
 .politiker {
   border: 3px double var(--text);
+}
+/*p3_changes:*/
+.p3 {
+  text-align: left;
+  width: 100%;
+  margin: auto;
+}
+.p3 > tr {
+  border: 1px solid black;
+}
+.p3 > tr > th {
+  border: 1px solid black;
 }
 /* utvider portrettbildene på partiet.html */
 .bilde {
@@ -638,6 +662,7 @@ td.leftcolumn {
   }
 }
 /*MOBIL VERSJON*/
+
 @media (max-width: 1000px) {
   main {
     min-width: 80%;
@@ -645,23 +670,35 @@ td.leftcolumn {
   /*NAVBAR*/
   /*grid templete setup:*/
   #navbar {
-    grid-template-columns: 170px 1fr;
-    grid-template-rows: repeat(4, 24px);
-    height: 98px;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: repeat(4, 22px);
+    height: 120px;
 
     background-size: 0;
   }
   /* text formatering: */
   #navbar > *:not(:first-child) {
-    margin-top: 1px;
+    margin-top: 5px;
     float: left;
   }
   #logoDiv {
-    margin-top: 1px;
-    height: 85px;
+    margin-top: 10px;
+    height: auto;
   }
   #logoDiv:hover > #lb {
-    margin-top: -85px;
+    display: none;
+  }
+  #logoDiv > #lb {
+    display: none;
+  }
+  #dropdown > a:not(:first-child) > h1 {
+    opacity: 1;
+  }
+  #dropdown > a:first-child > h1 {
+    opacity: 0;
+  }
+  #dropdown:hover {
+    background-size: 0;
   }
   /* grid plassering: */
   #logoa {
@@ -669,24 +706,23 @@ td.leftcolumn {
     grid-row-start: 1;
   }
   #n1 {
-    grid-column-start: 2;
+    grid-column: 2;
     grid-row-start: 1;
   }
   #n2 {
-    grid-column-start: 2;
+    grid-column: 2;
     grid-row-start: 2;
-    margin-left: 10%;
   }
   #n3 {
-    grid-column-start: 2;
+    grid-column: 2;
     grid-row-start: 3;
-    margin-left: 20%;
   }
   #dropdown {
-    grid-column-start: 2;
-    grid-row-start: 4;
-    margin-left: 30%;
-    height: 14ch;
+    grid-column: 2;
+    grid-row-start: 3;
+    padding: 0px;
+    z-index: -1;
+    padding-top: 3px;
   }
   /*FOOTER*/
   #footer {
@@ -748,5 +784,11 @@ td.leftcolumn {
     width: 50px;
     height: auto;
     margin-left: 90%;
+  }
+  #vidiogif {
+    display: none;
+  }
+  #bildegif {
+    display: block;
   }
 }

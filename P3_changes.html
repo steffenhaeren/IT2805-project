@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <title>P3 endringer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="icon" type="image/png" href="img/rocket.png" />
+  </head>
+
+  <body>
+    <br /><br />
+    <main>
+      <h1 class="header">P3 endringer av Månepartiet</h1>
+
+      <div class="avsnitt">
+        <h2>Dokument detaljer</h2>
+
+        <ul>
+          <li>Klientens navn: Månepartiet</li>
+          <li>Kontaktperson: Henrik Medmåne Månesen</li>
+          <li><a href="./index.html">Link til siden</a></li>
+        </ul>
+      </div>
+
+      <div class="avsnitt">
+        <h2>Endringer</h2>
+        <p><b>Generell struktur</b></p>
+        <p>
+          Siden vår endte opp med samme oppbyggning som alle de andre norske
+          partiene slik vi ønsket.
+        </p>
+        <br />
+        <p><b>Generelle endringer</b></p>
+        <p>
+          Vi har endret teksten til D-DIN-regular, tekststørrelsen til 12px,
+          linjavstand til “normal”, undertiltel størrelse til 12px, og titler
+          til 16px. Dette har vi gjort etter masse testing og vi synes dette ser
+          best ut. vi har fortsatt Verdana som backup. Å ha undertitelen og
+          texten til å være samme størrelse var best for da tok ikke undertitlen
+          for mye oppmerksomhet, men var fortsatt forskjellig fra resten av
+          teksten, fordi teksten har en boks rundt seg. Body widthen er satt til
+          70% og ikke et fast tall, dette er for å hjelpe med responsiveness. Vi
+          har endret bakgrunnen til å være mørk grå rgb(40, 40, 40) og
+          bokstavene er en hvit (255, 255, 255). Vi har mørk grå og hvite
+          farger, fordi det passer bedre med romfart og ser bedre ut, i tillegg
+          er det ikke for mange forskjellige farger som kjemper om
+          oppmerksomheten. Navbaren og Footeren har nå samme farge som resten av
+          siden, og “politikk”, “partiet” osv, har størrelse 16px. Dette er
+          gjort fordi det ser best ut og slik at det passer med resten av siden.
+        </p>
+        <br />
+        <p><b>Homepage</b></p>
+        <p>
+          En stor endring fra planleggingen av denne siden er at vi ikke har et
+          bildegalleri av politikerne med quotes fra hver av de, men heller et
+          bildegalleri av romfart og debatter. Dette er fordi vi skal ha bilder
+          av politikerne av partiet under partiet.html.
+        </p>
+        <br />
+        <p><b>Partiet</b></p>
+        <p>
+          Denne siden ble stort sett slik som planlagt, men vi valgte å ha mer
+          luft mellom seksjonene på nettsiden da dette så mer oversiktlig ut.
+        </p>
+        <br />
+        <p><b>Gi gave</b></p>
+        <p>
+          Denne siden har mange endringer, blant annet infoen man fyller inn i
+          starten er nå fornavn, etternavn, epost, gate, gatenummer og
+          postnummer. Vi har ikke med bilder av merchen da vi ikke fant en god
+          løsning som så oversiktlig ut, vi lener oss derfor på brukerens
+          fantasi. Vi la også til en resetknapp som nullstiller totalenverdien
+          av donasjonen og unchecker all merchen.
+        </p>
+        <br />
+        <p><b>Politikk</b></p>
+        <p>
+          Lite er endret på politikk.html. Det er lagt til noen ekstra
+          funksjonen i css som at text boksene blir større ved hovring og
+          visjonen endrer farge. Dette var mest for å vise at vi får til disse
+          effektene.
+        </p>
+        <br />
+        <p><b>Partiet</b></p>
+        <p>
+          Denne siden ble stort sett slik som planlagt, men vi valgte å ha mer
+          luft mellom seksjonene på nettsiden da dette så mer oversiktlig ut.
+        </p>
+        <br />
+        <p><b>Romfart på 1,2,3</b></p>
+        <p>
+          Vi endret månelandingsfartøy til en rakett som flyr opp- og nedover
+          siden.
+        </p>
+        <br />
+        <p><b>Bli medlem</b></p>
+        <p>
+          "Bli medlem"-siden ble litt annerledes enn først planlagt. Vi valgte å
+          ikke ha en tynn ramme rundt innmeldingsskjmaet, fordi vi ikke syntes
+          det så så fint ut. Istedenfor å ha bokser med forskjellige typer
+          medlemskap, så valgte vi å ha en drop down meny, fordi vi syntes det
+          passet bedre. Vi endret også prisene på medlemskap, til priser vi
+          likte bedre. Vi la også til noen ekstra input felt, som fødselsdato og
+          kjønn (for statistikk), og "ønsker velkomstpakke i posten" og "jeg har
+          lest og godtar avtalen for medlemskap" (for at det ser ut som en
+          typisk parti-side).
+        </p>
+        <br />
+        <p><b>Gi gave</b></p>
+        <p>
+          Denne siden har mange endringer, blant annet infoen man fyller inn i
+          starten er nå fornavn, etternavn, epost, gate, gatenummer og
+          postnummer. Vi har ikke med bilder av merchen da vi ikke fant en god
+          løsning som så oversiktlig ut, vi lener oss derfor på brukerens
+          fantasi. Vi la også til en resetknapp som nullstiller totalenverdien
+          av donasjonen og unchecker all merchen. Vi endret prisen på
+          rocket-launch til 600 000 000,- fordi vi fikk rabatt.
+        </p>
+        <br />
+        <p><b>Navbar</b></p>
+        <p>
+          Navbaren ble endret ved at i stedet for å endre farge ved hovring ble
+          det animert en underlinje. Dette var rett å slett fordi det var noe
+          mere krevende og så kuler ut. Her kunne vi valgt å bruke endring av
+          skrivtfargefunksjonen da vi også lagde dette i teksten for visjonen
+          vår på politikk.html. Jeg ser også at vi skrev at gi gave skylle
+          floate til høgre, men grunnet at vi brukte flexgrid. Dette fordi vi
+          ikke viste om det var lov å bruke flexgrid da p2 var skrevet
+        </p>
+        <br />
+        <p><b>Logo</b></p>
+        <p>
+          Logoen ble som vi tenkte, men animasjonen ble gjort ved css transform
+          og vi endte opp med å ikke animere en rakett siden vi alerede hadde
+          dette på romfart siden.
+        </p>
+        <br />
+        <p><b>Funksjonelle krav</b></p>
+        <p>
+          Vi endret det tredje funksjonelle kravet vårt, der det står: “Støtt
+          oss”-knappen gir mulighet til å donere penger til partiet. <br />
+          Det vi endret til er at det er "Gi gave"-knappen som gir deg denne
+          mulighet og ikke "Støtt oss"-knappen.
+        </p>
+        <br />
+        <p><b>Optimalisering</b></p>
+        <p>
+          Vi utførte alle optimaliseringstiltakene. Giffen spilles ikke av på
+          mobilversjonen, fordi dette vil bruke mye data. I tilleg spilles ikke
+          logoen av animasjon og bildene våre er små, for å spare tid ved
+          innlastning av siden. Elementene på siden legges også opp hverandre
+          når du er på mobil.
+        </p>
+      </div>
+
+      <div class="avsnitt">
+        <h2>Oppdatert mappestruktur</h2>
+        <p>
+          Mappestrukturen endret vi litt fordi vi la til en video. Derfor lagde
+          vi en "vid" folder. I tilleg måtte vi endre navnet på hjem.html til
+          index.html for at siden skulle fungere riktig på ntnu sine servere.
+          Til slutt la vi all HTML-filene i en en egen mappe slik at strukturen
+          ble mer oversiktig. Dette var litt utfordrene å linke til de
+          forskjellige sidene fra navbaren da relativ filplassering ikke lengere
+          fungerte. Vi kom rundt dette relativt elegant, ved å se på navnet til
+          html filene. Ettersom at NTNU sine servere ikke var helt
+          samarbeidsvillige med å gi oss navnet på HTML-filene, måtte vi endre
+          til å bruke et anker på hjem siden, som ikke ble like fint, men som
+          også fungerer.
+        </p>
+
+        <ul>
+          <li>
+            css/
+            <ul>
+              <li>style.css</li>
+            </ul>
+          </li>
+          <li>
+            img/
+            <ul>
+              <li>alex.jpg</li>
+              <li>brage.jpg</li>
+              <li>gerhard.jpg</li>
+              <li>logo.jpg</li>
+              <li>maanesengif.gif</li>
+              <li>mathias.jpg</li>
+              <li>mp.jpg</li>
+              <li>rocket.jpg</li>
+              <li>slideshow1.jpg</li>
+              <li>slideshow3.jpg</li>
+              <li>slideshow4.jpg</li>
+              <li>slideshow5.jpg</li>
+              <li>slideshow6.jpg</li>
+              <li>steffen.jpg</li>
+              <li>steffi.jpg</li>
+            </ul>
+          </li>
+          <li>
+            js/
+            <ul>
+              <li>bildegalleri.js</li>
+              <li>gave.js</li>
+              <li>medlem.js</li>
+              <li>navfot.js</li>
+              <li>rakett.js</li>
+              <li>sok.js</li>
+            </ul>
+          </li>
+          <li>
+            pages/
+            <ul>
+              <li>gave.html</li>
+              <li>medlem.html</li>
+              <li>partiet.html</li>
+              <li>politikk.html</li>
+              <li>romfart.html</li>
+            </ul>
+          </li>
+          <li>
+            vid/
+            <ul>
+              <li>romfart123.mp4</li>
+              <li>romfart123.ogg</li>
+              <li>romfart123.webm</li>
+            </ul>
+          </li>
+          <li>index.html</li>
+        </ul>
+      </div>
+
+      <div class="avsnitt">
+        <h2>Modularitet</h2>
+        <p>
+          Nettsiden har en autogenerert navbar og footer, siden disse skulle
+          være på alle sidene. Denne ble laged ved at en javascriptfil kjente
+          igjen en id i footer og header tagen på hver side. Siden vi har et css
+          dokument inneholder dette også layouten til navbaren og footeren. I
+          tilleg til dette har vi standarisert, font, skriftstørrelse,
+          linjeavstand, og scalerende text ved vinustørrelser på alle sider. Vi
+          bruker i tilleg variabler med textfarge og bakrundsfargen samt en
+          acsent for å gjøre det enkelt å leke rundt med fargebruk for siden.
+          <br /><br />
+          Om vi ikke måtte ha laget bare ett css dokument, tror jeg kansje
+          likevell det hadde vert kjekkt å delt det opp i flere deler slik at
+          det blir mere oversiktig å jobbe med.
+        </p>
+      </div>
+
+      <div class="avsnitt">
+        <h2>Arbeidsfordeling</h2>
+        <p>
+          Det ble noen forandringer i arbeidstrukturen. Dette var grunnet at
+          noen av elementene ligner mere og det var dermed mere effektivt å ha
+          en persjon som arbeidet på dem. Ellers tokk noen oppgaver noe mere tid
+          en forventet og andre mindre.
+          <br />
+          Alle fullførte hver sin javascript og hadde minst en html side.
+        </p>
+        <br />
+        <h2>Hvordan arbeidsfordelingen ble:</h2>
+        <table class="p3">
+          <tr>
+            <th>Filnavn</th>
+            <th>Beskrivelse</th>
+            <th>Ansvar</th>
+          </tr>
+          <tr>
+            <td>hjem.html</td>
+            <td>
+              Dette er “landing site” til nettstedet. Denne siden kommer man
+              tilbake til om man trykker på logoen på navigasjonsbaren. På siden
+              er det en stor slideshow av politikerne i partiet og quotes fra
+              dem (et bilde av hvert av oss i gruppen og Måne Månesen). Under
+              slideshowen skal vi ha en rask forklaring av partiets begrunnelse
+              for å satse på romfart.
+            </td>
+            <td>Steffen</td>
+          </tr>
+          <tr>
+            <td>politikk.html</td>
+            <td>
+              Denne siden skal formidle om politikken til partiet. Øverst ønsker
+              vi fire bokser med hjertesakene til partiet. Disse skal scale med
+              siden og gjøre informasjonen leselig over flere forskjellige
+              skjermer. Under dette skal visjonen til partiet stå. Det siste
+              elementet på siden skal være en søkefunksjon. Denne søkefunksjonen
+              skal gi leseren muligheten for å skrive inn et ord og trykke søk.
+              Det blir så vist en tekstboks på siden som skal fortelle partiets
+              syn på saken. I dette tilfelle latinsk tull.
+            </td>
+            <td>Gerhard</td>
+          </tr>
+          <tr>
+            <td>partiet.html</td>
+            <td>
+              Denne siden skal fortelle om politikerne og partiets historie.
+              Øverst på siden er det en gif av Henrik Medmåne Månesen. Under
+              denne skal vi på gruppen få hver vår boks som også scaler med
+              siden. Under dette vil vi ha en seksjon med partiets historie,
+              etterfulgt av informasjon om ungdomspartiet, lokallag, fylkeslag
+              og etisk-organisatorisk retningslinjer.
+            </td>
+            <td>Steffen</td>
+          </tr>
+          <tr>
+            <td>romfart.html</td>
+            <td>
+              Under navigasjonsbaren skal det være en embedded video som skal gi
+              en kjapp innføring i romfart, brukeren skal kunne gå fram og
+              tilbake i videoen samt. ha kontroll på lydvolumet og om videoen
+              spilles av eller ikke. Etterfulgt av videoen skal det være 3 korte
+              tekster med lett informasjon om romfart med relevante overskrifter
+              til hvert avsnitt. På siden skal vi også prøve å implementere et
+              månelandingsfartøy som lander mens man scroller opp og ned på
+              siden.
+            </td>
+            <td>Mathias</td>
+          </tr>
+          <tr>
+            <td>gave.html</td>
+            <td>
+              Overskriften her skal si “Støtt oss ved å gi gave”, og etterfølges
+              av et inputfelt hvor brukeren kan skrive inn pengesummen de ønsker
+              å donere, huka av for hva slags type merch man ønsker, og en knapp
+              som fullfører donasjonen. Merchen man kan velge mellom er kopp
+              (50,-), caps (100,-), t-skjorte (200,-) og en rakett-lauch (900
+              000 000,-). Under feltet skal det være fire bilder som
+              representerer merchen. Når man trykker doner knappen etter å ha
+              valgt mengde og/eller merch, vil man få en konfirmasjonsbox som
+              forteller deg at en faktura er på vei til adressen som ble
+              oppgitt.
+            </td>
+            <td>Brage</td>
+          </tr>
+          <tr>
+            <td>medlem.html</td>
+            <td>
+              En overskrift som sier “Bli medlem” følges av en rekke
+              input-elementer hvor brukeren kan skrive inn detaljene sine.
+              Detaljene som skal fylles inn er navn, epost, gate /m gatenummer,
+              postnummer og hvor mye de ønsker å gi i året, de kan velge mellom
+              å gi 1000,-/500,-/150,- hvert år. Hele dette feltet skal ha en
+              tynn ramme.
+            </td>
+            <td>Alexandra</td>
+          </tr>
+          <tr>
+            <td>style.css</td>
+            <td>CSS filen med all styling for hele nettsida.</td>
+            <td>Alle lager css for sinde objekter</td>
+          </tr>
+          <tr>
+            <td>bildegalleri.js</td>
+            <td>Javascripten for å kontrollere bildene.</td>
+            <td>Steffen</td>
+          </tr>
+          <tr>
+            <td>gave.js</td>
+            <td>Javascripten for å kontrollere gave.html-siden.</td>
+            <td>Brage</td>
+          </tr>
+          <tr>
+            <td>navfot.js</td>
+            <td>Javascripten som genererer navbaren.</td>
+            <td>Gerhard</td>
+          </tr>
+          <tr>
+            <td>rakett.js</td>
+            <td>
+              Javascripten som får romskipet på romfart.html til å fungere
+            </td>
+            <td>Gerhard</td>
+          </tr>
+          <tr>
+            <td>sok.js</td>
+            <td>Søkefunksjonen til politikk.html</td>
+            <td>Gerhard</td>
+          </tr>
+          <tr>
+            <td>medlem.js</td>
+            <td>la til reqierments til medlem siden slik som alder > 13.</td>
+            <td>Alexandra</td>
+          </tr>
+          <tr>
+            <td>medlem.js</td>
+            <td>Feedback til brukeren etter å ha sendt in formen</td>
+            <td>Brage</td>
+          </tr>
+          <tr>
+            <td>logo.jpg</td>
+            <td>
+              Bilde av en måne som kommer opp når du holder musa di foran
+              logoen. Dette er bakgrunnen til logoen.
+            </td>
+            <td>Mathias</td>
+          </tr>
+          <tr>
+            <td>alexandra.jpg</td>
+            <td>Bilde av Alexandra</td>
+            <td>Alle</td>
+          </tr>
+          <tr>
+            <td>brage.jpg</td>
+            <td>Bilde av Brage</td>
+            <td>Alle</td>
+          </tr>
+          <tr>
+            <td>gerhard.jpg</td>
+            <td>Bilde av Gerhard</td>
+            <td>Alle</td>
+          </tr>
+          <tr>
+            <td>mathias.jpg</td>
+            <td>Bilde av Mathias</td>
+            <td>Alle</td>
+          </tr>
+          <tr>
+            <td>steffen.jpg</td>
+            <td>Bilde av Steffen</td>
+            <td>Alle</td>
+          </tr>
+          <tr>
+            <td>rocket.jpg</td>
+            <td>
+              Bilde av en rakett. Denne brukes på siden "Romfart på 1,2,3" og
+              vises på høyre siden når du skroller ned på siden.
+            </td>
+            <td>Gerhard</td>
+          </tr>
+          <tr>
+            <td>mp.jpg</td>
+            <td>Skriften til logoen vår.</td>
+            <td>Mathias</td>
+          </tr>
+          <tr>
+            <td>slideshow bilder</td>
+            <td>Bildene til bildekarusellen på forsiden</td>
+            <td>Steffen</td>
+          </tr>
+          <tr>
+            <td>maanesengif.gif</td>
+            <td>Gif av Henrik Medmåne Månesen</td>
+            <td>Steffen</td>
+          </tr>
+          <tr>
+            <td>romfart123.mp4</td>
+            <td>Videoen vår "Romfart på 1,2,3" siden</td>
+            <td>Mathias</td>
+          </tr>
+          <tr>
+            <td>romfart123.ogg</td>
+            <td>Videoen vår "Romfart på 1,2,3" siden</td>
+            <td>Mathias</td>
+          </tr>
+          <tr>
+            <td>romfart123.webm</td>
+            <td>Videoen vår "Romfart på 1,2,3" siden</td>
+            <td>Mathias</td>
+          </tr>
+          <tr>
+            <td>Sikkerhetssjekk</td>
+            <td>
+              Dobbeltsjekking av hver fil, og at de ikke har noen feil eller
+              errors ved seg.
+            </td>
+            <td>Alle</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <div id="footer"></div>
+    </footer>
+  </body>
+</html>
