@@ -418,6 +418,18 @@ a {
 .politiker {
   border: 3px double var(--text);
 }
+/*p3_changes:*/
+.p3 {
+  text-align: left;
+  width: 100%;
+  margin: auto;
+}
+.p3 > tr {
+  border: 1px solid black;
+}
+.p3 > tr > th {
+  border: 1px solid black;
+}
 /* utvider portrettbildene på partiet.html */
 .bilde {
   width: 100%;
