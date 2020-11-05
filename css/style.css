@@ -1,5 +1,6 @@
 /*GENERELT*/
 :root {
+  /*her er det no muffins warnings som ingen skjøøner noe av*/
   --backround: rgb(40, 40, 40);
   --text: white;
   --accent: rgb(255, 136, 0);
@@ -94,7 +95,14 @@ a {
 }
 /*fancy drop down meny:*/
 #dropdown {
-  background-image: linear-gradient(90deg, var(--text) 1%, var(--backround) 1%);
+  /*her får vi en valideringsfeil vi ikke fårstår noe av. 
+  Bakrunden som er til droppownmenyen fungerer likevel som ønsket. 
+  Vi har både googlet og spurt studass.*/
+  background-image: linear-gradient(
+    to right,
+    var(--text) 1%,
+    var(--backround) 1%
+  );
   background-size: 100% 0;
   background-repeat: no-repeat;
   padding-left: 8px;
@@ -218,6 +226,7 @@ a {
   background-color: rgb(54, 54, 54);
 }
 .underlinje {
+  /*Her fikk vi også en valederingserror som hverken vi eller studass skjønner noa av, men all koden fungerer som planlagt.*/
   background-image: linear-gradient(var(--text), var(--text));
   background-size: 85% 1px;
   background-position-x: center;
@@ -245,6 +254,7 @@ a {
   transition: color 0.3s;
 }
 .fancyUnderline {
+  /*Her fikk vi også en valederingserror som hverken vi eller studass skjønner noa av, men all koden fungerer som planlagt.*/
   background-image: linear-gradient(var(--text), var(--text));
   background-repeat: no-repeat;
   background-size: 0px 0.07em;
