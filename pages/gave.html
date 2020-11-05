@@ -28,7 +28,7 @@
                 id="fornavn"
                 name="fornavn"
                 placeholder="Ola"
-                pattern="^[a-zA-Z-æøåÆØÅ]+$"
+                pattern="^[a-zA-Z-æøåÆØÅ ]+$"
                 required
               />
             </div>
@@ -61,12 +61,12 @@
                 id="gate"
                 name="gate"
                 placeholder="Månegata"
-                pattern="[A-Za-z* ]+[A-Za-z*]"
+                pattern="[a-zA-Z-æøåÆØÅ* ]+[a-zA-Z-æøåÆØÅ*]"
                 required
               />
             </div>
             <div class="div5">
-              <label for="gatenummer">Gatenummer: </label><br />
+              <label for="gatenummer">Gatenr: </label><br />
               <input
                 type="number"
                 id="gatenummer"
@@ -78,7 +78,7 @@
               />
             </div>
             <div class="div6">
-              <label for="postnummer">Postnummer: </label><br />
+              <label for="postnummer">Postnr: </label><br />
               <input
                 type="number"
                 id="postnummer"
