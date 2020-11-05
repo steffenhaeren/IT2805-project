@@ -11,11 +11,18 @@
   <body>
     <br /><br />
     <main>
-      <h1 class="header_p3">P3 endringer av Månepartiet</h1>
+      <h1 class="header_p3">P3 Endringer av Månepartiet</h1>
+
+      <div class="avsnitt">
+        <ul>
+          <li>Alexandra, Brage, Gerhard, Mathias, og Steffen</li>
+          <li>05/11/2020</li>
+        </ul>
+      </div>
 
       <div class="avsnitt">
         <div class="p3">
-        <h2>Dokument detaljer</h2>
+        <h2>Dokumentdetaljer</h2>
 
         <ul>
           <li>Klientens navn: Månepartiet</li>
@@ -36,10 +43,10 @@
         <p><b>Generelle endringer</b></p>
         <p>
           Vi har endret teksten til D-DIN-regular, tekststørrelsen til 12px,
-          linjavstand til “normal”, undertiltel størrelse til 12px, og titler
+          linjeavstand til “normal”, undertittel størrelse til 12px, og titler
           til 16px. Dette har vi gjort etter masse testing og vi synes dette ser
-          best ut. vi har fortsatt Verdana som backup. Å ha undertitelen og
-          texten til å være samme størrelse var best for da tok ikke undertitlen
+          best ut. vi har fortsatt Verdana som backup. Å ha undertittelen og
+          teksten til å være samme størrelse var best for da tok ikke undertittelen
           for mye oppmerksomhet, men var fortsatt forskjellig fra resten av
           teksten, fordi teksten har en boks rundt seg. Body widthen er satt til
           70% og ikke et fast tall, dette er for å hjelpe med responsiveness. Vi
@@ -47,15 +54,15 @@
           bokstavene er en hvit (255, 255, 255). Vi har mørk grå og hvite
           farger, fordi det passer bedre med romfart og ser bedre ut, i tillegg
           er det ikke for mange forskjellige farger som kjemper om
-          oppmerksomheten. Navbaren og Footeren har nå samme farge som resten av
+          oppmerksomheten. Navbaren og footeren har nå samme farge som resten av
           siden, og “politikk”, “partiet” osv, har størrelse 16px. Dette er
-          gjort fordi det ser best ut og slik at det passer med resten av siden.
+          gjort fordi det ser best ut, og slik at det passer med resten av siden.
         </p>
         <br />
         <p><b>Homepage</b></p>
         <p>
           En stor endring fra planleggingen av denne siden er at vi ikke har et
-          bildegalleri av politikerne med quotes fra hver av de, men heller et
+          bildegalleri av politikerne med sitater fra hver av dem, men heller et
           bildegalleri av romfart og debatter. Dette er fordi vi skal ha bilder
           av politikerne av partiet under partiet.html.
         </p>
@@ -112,7 +119,7 @@
         <p><b>Gi gave</b></p>
         <p>
           Denne siden har mange endringer, blant annet infoen man fyller inn i
-          starten er nå fornavn, etternavn, epost, gate, gatenummer og
+          starten er nå fornavn, etternavn, e-post, gate, gatenummer og
           postnummer. Vi har ikke med bilder av merchen da vi ikke fant en god
           løsning som så oversiktlig ut, vi lener oss derfor på brukerens
           fantasi. Vi la også til en resetknapp som nullstiller totalenverdien
@@ -135,7 +142,7 @@
         <p>
           Logoen ble som vi tenkte, men animasjonen ble gjort ved css transform
           og vi endte opp med å ikke animere en rakett siden vi alerede hadde
-          dette på romfart siden.
+          dette på "Romfart på 1,2,3"-siden.
         </p>
         <br />
         <p><b>Optimalisering</b></p>
@@ -152,13 +159,13 @@
         <h2>Oppdatert mappestruktur</h2>
         <p>
           Mappestrukturen endret vi litt fordi vi la til en video. Derfor lagde
-          vi en "vid" folder. I tilleg måtte vi endre navnet på hjem.html til
-          index.html for at siden skulle fungere riktig på ntnu sine servere.
+          vi en "vid"-mappe. I tilleg måtte vi endre navnet på hjem.html til
+          index.html for at siden skulle fungere riktig på NTNU sine servere.
           Til slutt la vi all HTML-filene i en en egen mappe slik at strukturen
           ble mer oversiktig. Dette var litt utfordrene å linke til de
           forskjellige sidene fra navbaren da relativ filplassering ikke lengere
           fungerte. Vi kom rundt dette relativt elegant, ved å se på navnet til
-          html filene. Ettersom at NTNU sine servere ikke var helt
+          HTML-filene. Ettersom at NTNU sine servere ikke var helt
           samarbeidsvillige med å gi oss navnet på HTML-filene, måtte vi endre
           til å bruke et anker på hjem siden, som ikke ble like fint, men som
           også fungerer.
@@ -229,12 +236,12 @@
         <h2>Modularitet</h2>
         <p>
           Nettsiden har en autogenerert navbar og footer, siden disse skulle
-          være på alle sidene. Denne ble laged ved at en javascriptfil kjente
-          igjen en id i footer og header tagen på hver side. Siden vi har et css
-          dokument inneholder dette også layouten til navbaren og footeren. I
-          tilleg til dette har vi standarisert, font, skriftstørrelse,
-          linjeavstand, og scalerende text ved vinustørrelser på alle sider. Vi
-          bruker i tilleg variabler med textfarge og bakrundsfargen samt en
+          være på alle sidene. Denne ble laget ved at en JavaScript-fil kjente
+          igjen en id i footer og header-tagen på hver side. Siden vi har et 
+          CSS-dokument inneholder dette også layouten til navbaren og footeren. I
+          tilleg til dette har vi standarisert font, skriftstørrelse,
+          linjeavstand, og skalerende tekst ved vindustørrelser på alle sider. Vi
+          bruker i tilleg variabler med tekstfarge og bakrundsfargen samt en
           acsent for å gjøre det enkelt å leke rundt med fargebruk for siden.
           <br /><br />
           Om vi ikke måtte ha laget bare ett css dokument, tror jeg kansje
@@ -248,10 +255,10 @@
         <p>
           Det ble noen forandringer i arbeidstrukturen. Dette var grunnet at
           noen av elementene ligner mere og det var dermed mere effektivt å ha
-          en persjon som arbeidet på dem. Ellers tokk noen oppgaver noe mere tid
+          en person som arbeidet på dem. Ellers tok noen oppgaver noe mere tid
           en forventet og andre mindre.
           <br />
-          Alle fullførte hver sin javascript og hadde minst en html side.
+          Alle fullførte hver sin JavaScript og hadde minst én HTML-side.
         </p>
         <br />
         <h2>Hvordan arbeidsfordelingen ble:</h2>
@@ -266,7 +273,7 @@
             <td class="arbeid">
               Dette er “landing site” til nettstedet. Denne siden kommer man
               tilbake til om man trykker på logoen på navigasjonsbaren. På siden
-              er det en stor slideshow av politikerne i partiet og quotes fra
+              er det en stor slideshow av politikerne i partiet og sitater fra
               dem (et bilde av hvert av oss i gruppen og Måne Månesen). Under
               slideshowen skal vi ha en rask forklaring av partiets begrunnelse
               for å satse på romfart.
@@ -292,10 +299,10 @@
             <td class="arbeid">
               Denne siden skal fortelle om politikerne og partiets historie.
               Øverst på siden er det en gif av Henrik Medmåne Månesen. Under
-              denne skal vi på gruppen få hver vår boks som også scaler med
+              denne skal vi på gruppen få hver vår boks som også skalerer med
               siden. Under dette vil vi ha en seksjon med partiets historie,
               etterfulgt av informasjon om ungdomspartiet, lokallag, fylkeslag
-              og etisk-organisatorisk retningslinjer.
+              og etiske og organisatoriske retningslinjer.
             </td>
             <td class="arbeid">Steffen</td>
           </tr>
@@ -341,30 +348,32 @@
             </td>
             <td class="arbeid">Alexandra</td>
           </tr>
+
           <tr class="arbeid">
             <td class="arbeid">style.css</td>
             <td class="arbeid">CSS filen med all styling for hele nettsida.</td>
-            <td class="arbeid">Alle lager css for sinde objekter</td>
+            <td class="arbeid">Alle lager CSS for sine objekter</td>
           </tr>
           <tr class="arbeid">
             <td class="arbeid">bildegalleri.js</td>
-            <td class="arbeid">Javascripten for å kontrollere bildene.</td>
+            <td class="arbeid">JavaScripten for å kontrollere bildene.</td>
             <td class="arbeid">Steffen</td>
           </tr>
           <tr class="arbeid">
             <td class="arbeid">gave.js</td>
-            <td class="arbeid">Javascripten for å kontrollere gave.html-siden.</td>
+            <td class="arbeid">JavaScripten for å kontrollere gave.html-siden.</td>
             <td class="arbeid">Brage</td>
           </tr>
           <tr class="arbeid">
             <td class="arbeid">navfot.js</td>
-            <td class="arbeid">Javascripten som genererer navbaren.</td>
+            <td class="arbeid">JavaScripten som genererer navbaren.</td>
             <td class="arbeid">Gerhard</td>
           </tr>
           <tr class="arbeid">
             <td class="arbeid">rakett.js</td>
             <td class="arbeid">
-              Javascripten som får romskipet på romfart.html til å fungere
+              JavaScripten som får romskipet på romfart.html til å fungere
+
             </td>
             <td class="arbeid">Gerhard</td>
           </tr>
@@ -373,20 +382,21 @@
             <td class="arbeid">Søkefunksjonen til politikk.html</td>
             <td class="arbeid">Gerhard</td>
           </tr>
+
           <tr class="arbeid">
             <td class="arbeid">medlem.js</td>
-            <td class="arbeid">la til reqierments til medlem siden slik som alder > 13.</td>
+            <td class="arbeid">la til requirements til medlem-siden slik som alder > 13.</td>
             <td class="arbeid">Alexandra</td>
           </tr>
           <tr class="arbeid">
             <td class="arbeid">medlem.js</td>
-            <td class="arbeid">Feedback til brukeren etter å ha sendt in formen</td>
+            <td class="arbeid">Tilbakemelding til brukeren etter å ha sendt inn formen</td>
             <td class="arbeid">Brage</td>
           </tr>
           <tr class="arbeid">
             <td class="arbeid">logo.jpg</td>
             <td class="arbeid">
-              Bilde av en måne som kommer opp når du holder musa di foran
+              Bilde av en måne som kommer opp når du holder markørpilen foran
               logoen. Dette er bakgrunnen til logoen.
             </td>
             <td class="arbeid">Mathias</td>
@@ -439,20 +449,22 @@
             <td class="arbeid">Gif av Henrik Medmåne Månesen</td>
             <td class="arbeid">Steffen</td>
           </tr>
+
           <tr class="arbeid">
             <td class="arbeid">romfart123.mp4</td>
-            <td class="arbeid">Videoen vår "Romfart på 1,2,3" siden</td>
+            <td class="arbeid">Videoen på "Romfart på 1,2,3"</td>
             <td class="arbeid">Mathias</td>
           </tr>
           <tr class="arbeid">
             <td class="arbeid">romfart123.ogg</td>
-            <td class="arbeid">Videoen vår "Romfart på 1,2,3" siden</td>
+            <td class="arbeid">Videoen på "Romfart på 1,2,3"</td>
             <td class="arbeid">Mathias</td>
           </tr>
           <tr class="arbeid">
             <td class="arbeid">romfart123.webm</td>
-            <td class="arbeid">Videoen vår "Romfart på 1,2,3" siden</td>
+            <td class="arbeid">Videoen på "Romfart på 1,2,3"</td>
             <td class="arbeid">Mathias</td>
+
           </tr>
           <tr class="arbeid">
             <td class="arbeid">Sikkerhetssjekk</td>
