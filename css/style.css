@@ -421,14 +421,18 @@ a {
 /*p3_changes:*/
 .p3 {
   text-align: left;
-  width: 100%;
+  width: auto;
   margin: auto;
+  font-family: arial, sans-serif;
+  font-size: 1.5em;
 }
-.p3 > tr {
-  border: 1px solid black;
+.p3, td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }
-.p3 > tr > th {
-  border: 1px solid black;
+.header_p3 {
+  font-size: 5em;
 }
 /* utvider portrettbildene på partiet.html */
 .bilde {
