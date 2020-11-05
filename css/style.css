@@ -541,6 +541,7 @@ table {
 
 td.leftcolumn {
   text-align: left;
+  font-size: 1.5em;
 }
 /*LITE VINDU*/
 @media (max-width: 1600px) {
@@ -557,7 +558,11 @@ td.leftcolumn {
     font-size: 1.5em;
   }
   label {
-    font-size: 1em;
+    font-size: 1.5em;
+  }
+  table {
+    width: 70%;
+    margin: auto;
   }
   /*NAVBAR*/
   /*grid templete setup:*/
@@ -586,6 +591,10 @@ td.leftcolumn {
 @media (max-width: 1300px) {
   body {
     font-size: 0.5em;
+  }
+  table {
+    width: 80%;
+    margin: auto;
   }
   /*NAVBAR*/
   /*grid templete setup:*/
@@ -666,6 +675,10 @@ td.leftcolumn {
 @media (max-width: 1000px) {
   main {
     min-width: 80%;
+  }
+  table {
+    width: 95%;
+    margin: auto;
   }
   /*NAVBAR*/
   /*grid templete setup:*/
